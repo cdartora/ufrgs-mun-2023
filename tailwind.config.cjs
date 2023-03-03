@@ -9,6 +9,8 @@ module.exports = {
         lightTone: "#D3D6C6",
         darkGray: "#6B7983",
         lightGray: "#87959F",
+        textDark: "#304032",
+        darkBorders: "#1E2F23",
       },
     },
   },

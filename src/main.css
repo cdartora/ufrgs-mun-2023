@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  min-width: 375px;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.barlow {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.gradient {
+  background: linear-gradient(
+    240.36deg,
+    #c7d6d6 -53.73%,
+    #858e7f -24.25%,
+    #364536 26.91%,
+    #2c3c2f 80.68%,
+    #1e2f23 112.76%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  /* Apply different styles for smaller screens
+  @media only screen and (max-width: 768px) {
+    background-size: cover;
+  } */
+}
+
+.detail {
+  z-index: 1;
+}
+
+.content {
+  z-index: 2;
+}
+
+.curves {
+  width: calc(100vw);
+}
+
+.responsive-iframe {
+  position: relative;
+  /* overflow: hidden; */
+  /* max-width: 600px; */
+  width: 100%;
+  max-width: 504px;
+  max-height: 284px;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.youtube {
+  width: 504px;
+  height: 284px;
+  max-width: 100%;
+  max-height: calc((100vw - 40px) / (16 / 9));
+}
