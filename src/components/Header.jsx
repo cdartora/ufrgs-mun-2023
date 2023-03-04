@@ -5,10 +5,18 @@ import UfrgsMunLogo from "../assets/logo.svg";
 import "./header.css";
 
 export default function Header() {
-  const isMobile = window.innerWidth < 768; // Set the breakpoint for mobile devices
-  console.log(isMobile);
-
+  const BREAKPOINT = 1090;
+  const [isMobile, setIsMobile] = useState(window.innerWidth < BREAKPOINT);
   const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < BREAKPOINT);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +28,7 @@ export default function Header() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [window.innerWidth]);
 
   return (
     <>
