@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        lg: "1080px",
+      },
       colors: {
         darkGreen: "#1E2F23",
         lightGreen: "#868E77",
@@ -11,6 +14,9 @@ module.exports = {
         lightGray: "#87959F",
         textDark: "#304032",
         darkBorders: "#1E2F23",
+        brand: {
+          dark: "#1e2f23",
+        },
       },
     },
   },

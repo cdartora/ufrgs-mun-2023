@@ -1,22 +1,11 @@
-import Header from "../components/Header";
-import HeroSection from "../components/HeroSection";
-import MottoSection from "../components/MottoSection";
+import NavBar from "../components/NavBar";
 
 export default function Root() {
   return (
-    <div className="gradient" id="hero-section">
-      {/* Header and Navigation */}
-      <Header />
-
-      {/* Hero Section */}
-      <HeroSection />
-
-      {/* Motto Section */}
-      <MottoSection />
-
-      {/* Deadlines Section */}
-
-      {/* Footer and Navigation */}
-    </div>
+    <main className="App bg-zinc-100">
+      <header className="text-zinc-200">
+        <NavBar />
+      </header>
+    </main>
   );
 }
