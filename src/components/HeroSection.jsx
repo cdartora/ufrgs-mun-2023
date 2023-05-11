@@ -1,32 +1,52 @@
-import HeroImage from "../assets/20-anos.svg";
+import shape from "../assets/shape.svg";
+import wave from "../assets/wave2.svg";
+import heroContent from "../assets/teste.svg";
+import Motto from "../components/Motto.jsx";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col">
-      <div className="flex flex-col items-center md:flex-row-reverse md:justify-center md:items-center max-w-6xl mx-auto py-8 px-4 md:px-8 content">
-        {/* Image */}
-        <div className="w-full md:w-1/2 flex items-center justify-center h-full">
+    <div className="bg-darkGreen relative">
+      <div className="px-4 py-6 max-w-screen-md mx-auto">
+        <div className="mb-10 z-30 w-full flex justify-center">
+          {/* <div className="flex flex-col text-xl">
+            <span className="italic font-bold">Atravesse</span>
+            <span>a superfície.</span>
+            <span>
+              <span className="italic font-bold">Encontre</span> respostas
+            </span>
+            <span>desconhecidas</span>
+          </div> */}
+
           <img
-            src={HeroImage}
-            alt="Comemoração de 20 anos da conferência UFRGS Mun"
-            style={{ objectFit: "cover", height: "100%" }}
+            src={heroContent}
+            alt=""
+            className="w-96"
+            draggable="false"
+            style={{ userSelect: "none" }}
+            onmousedown="return false"
           />
         </div>
-        {/* Text */}
-        <div className="mt-10 md:w-1/2 flex items-center justify-center mb-10 md:mb-0 h-full">
-          <div className="text-lightTone font-bold text-3xl md:text-4xl flex flex-col text-left md:text-left content raleway">
-            <span>ATRAVESSE A</span>
-            <span>SUPERFÍCIE.</span>
-            <span>ENCONTRE</span>
-            <span>RESPOSTAS</span>
-            <span>DESCONHECIDAS</span>
-            <div className="flex flex-col font-normal text-right text-2xl barlow">
-              <span>break the surface.</span>
-              <span>reach hidden answers</span>
-            </div>
-          </div>
-        </div>
+        <Motto />
       </div>
-    </section>
+      {/* <div
+        className="absolute w-full h-14 bg-no-repeat"
+        style={{
+          backgroundImage: `url(${shape})`,
+          backgroundSize: "100% 100%",
+        }}
+      ></div> */}
+      <img
+        src={shape}
+        className="block absolute w-full bottom-[-2px] z-10"
+        draggable="false"
+        style={{ userSelect: "none" }}
+        onmousedown="return false"
+      />
+      <img
+        src={wave}
+        alt=""
+        className="z-20 absolute top-0 opacity-20 h-full"
+      />
+    </div>
   );
 }

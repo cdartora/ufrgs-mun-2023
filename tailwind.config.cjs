@@ -16,6 +16,12 @@ module.exports = {
         darkBorders: "#1E2F23",
         brand: {
           dark: "#1e2f23",
+          grey: "#3D3D3D",
+          darker: "#1B291F",
+        },
+        calendar: {
+          grey: "#87959F",
+          text: "#3d3d3d",
         },
       },
     },

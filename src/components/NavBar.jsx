@@ -10,7 +10,7 @@ export default function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <nav className="flex sticky top-0 z-10 bg-brand-dark shadow-lg">
+    <nav className="flex sticky top-0 left-0 w-full z-40 bg-brand-dark gradient shadow-xl">
       <div className="flex items-center p-4">
         <img src={navLogo} alt="all white logo" width="140" />
       </div>
@@ -25,7 +25,7 @@ export default function NavBar() {
               <X size={32} weight="bold" />
             </button>
 
-            <div className="absolute top-[70px] bg-brand-dark w-full right-0">
+            <div className="absolute top-[69px] bg-brand-dark w-full right-0">
               <MenuItem label="Início" mobile={true} closeMenu={toggleMenu} />
               <MenuItem
                 label="Sobre nós"
