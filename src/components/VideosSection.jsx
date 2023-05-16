@@ -4,7 +4,7 @@ import shape from "../assets/shape-2.svg";
 function VideosSection() {
   return (
     <div className="max-w-screen-md mx-auto flex flex-col items-center justify-center px-4 mt-5">
-      <div className="px-6 z-20 mb-20">
+      <div className="px-6 z-20 mb-20 md:mb-40">
         <div className="w-full font-extrabold text-2xl text-brand-grey mb-2">
           Teaser
         </div>
@@ -29,16 +29,25 @@ function VideosSection() {
       <img
         src={earth}
         alt=""
-        className="z-10 absolute -left-20 bottom-0"
+        className="z-10 absolute -left-20 bottom-0 md:hidden"
         draggable="false"
         style={{ userSelect: "none" }}
         onmousedown="return false"
-        width="320"
+        width={300}
+      />
+      <img
+        src={earth}
+        alt=""
+        className="z-10 absolute -left-20 bottom-0 hidden md:block"
+        draggable="false"
+        style={{ userSelect: "none" }}
+        onmousedown="return false"
+        width={400}
       />
       <img
         src={shape}
         alt=""
-        className="z-30 absolute bottom-0 w-full"
+        className="z-30 absolute -bottom-[1px] w-full"
         draggable="false"
         style={{ userSelect: "none" }}
         onmousedown="return false"
