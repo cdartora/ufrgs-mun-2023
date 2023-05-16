@@ -12,7 +12,7 @@ function CarouselCard({ cardData }) {
           </div>
         </div>
         <div className="px-4 py-2 text-center">
-          <p className="text-sm text-calendar-text">{name}</p>
+          <p className="text-xs text-calendar-text font-light">{name}</p>
         </div>
       </div>
     </div>
