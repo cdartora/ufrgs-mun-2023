@@ -46,6 +46,9 @@ export default function HeroSection() {
         src={wave}
         alt=""
         className="z-20 absolute top-0 opacity-20 h-full"
+        draggable="false"
+        style={{ userSelect: "none" }}
+        onmousedown="return false"
       />
     </div>
   );
