@@ -11,9 +11,9 @@ function VideosSection() {
         <iframe
           className="youtube rounded-2xl shadow-xlg"
           src="https://www.youtube-nocookie.com/embed/JwkBcE0qRdM?rel=0&amp;controls=0&amp;showinfo=0"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen=""
+          allowFullScreen=""
         ></iframe>
         <div className="w-full font-extrabold text-2xl text-brand-grey mb-2 mt-4">
           Mais vídeos
@@ -21,9 +21,9 @@ function VideosSection() {
         <iframe
           className="youtube rounded-2xl shadow-xlg z-20"
           src="https://www.youtube-nocookie.com/embed/JwkBcE0qRdM?rel=0&amp;controls=0&amp;showinfo=0"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen=""
+          allowFullScreen=""
         ></iframe>
       </div>
       <img
@@ -32,7 +32,7 @@ function VideosSection() {
         className="z-10 absolute -left-20 bottom-0 md:hidden"
         draggable="false"
         style={{ userSelect: "none" }}
-        onmousedown="return false"
+        onMouseDown={() => false}
         width={300}
       />
       <img
@@ -41,7 +41,7 @@ function VideosSection() {
         className="z-10 absolute -left-20 bottom-0 hidden md:block"
         draggable="false"
         style={{ userSelect: "none" }}
-        onmousedown="return false"
+        onMouseDown={() => false}
         width={400}
       />
       <img
@@ -50,7 +50,7 @@ function VideosSection() {
         className="z-30 absolute -bottom-[1px] w-full"
         draggable="false"
         style={{ userSelect: "none" }}
-        onmousedown="return false"
+        onMouseDown={() => false}
         width="320"
       />
     </div>

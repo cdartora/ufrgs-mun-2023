@@ -23,7 +23,7 @@ export default function HeroSection() {
             className="w-96"
             draggable="false"
             style={{ userSelect: "none" }}
-            onmousedown="return false"
+            onMouseDown={() => false}
           />
         </div>
         <Motto />
@@ -40,7 +40,7 @@ export default function HeroSection() {
         className="block absolute w-full bottom-[-2px] z-10"
         draggable="false"
         style={{ userSelect: "none" }}
-        onmousedown="return false"
+        onMouseDown={() => false}
       />
       <img
         src={wave}
@@ -48,7 +48,7 @@ export default function HeroSection() {
         className="z-20 absolute top-0 opacity-20 h-full"
         draggable="false"
         style={{ userSelect: "none" }}
-        onmousedown="return false"
+        onMouseDown={() => false}
       />
     </div>
   );

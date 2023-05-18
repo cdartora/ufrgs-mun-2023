@@ -14,15 +14,12 @@ function DeadlinesSection() {
             className="w-7"
             draggable="false"
             style={{ userSelect: "none" }}
-            onmousedown="return false"
+            onMouseDown={() => false}
           />
           <h4 className="text-lg font-extrabold text-zinc-200">Cronograma</h4>
           <div className="scroll-smooth p-5 mt-4 flex w-full gap-4 snap-x overflow-x-auto z-20 md:justify-center">
-            {deadlines.map((cardData) => (
-              <CarouselCard
-                cardData={cardData}
-                key={cardData.backgroundImage}
-              />
+            {deadlines.map((cardData, index) => (
+              <CarouselCard cardData={cardData} key={index} />
             ))}
           </div>
         </div>
@@ -31,7 +28,7 @@ function DeadlinesSection() {
           className="absolute w-full h-full opacity-20 z-10 top-0"
           draggable="false"
           style={{ userSelect: "none" }}
-          onmousedown="return false"
+          onMouseDown={() => false}
         />
       </div>
     </div>
