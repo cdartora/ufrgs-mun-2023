@@ -23,6 +23,9 @@ module.exports = {
           grey: "#87959F",
           text: "#3d3d3d",
         },
+        green: {
+          text: "#2C3C2F",
+        },
       },
     },
   },
