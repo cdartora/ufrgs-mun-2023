@@ -1,11 +1,11 @@
 import CarouselCard from "./CarouselCard";
-import wave from "../assets/wave-2.svg";
-import calendar from "../assets/calendar.svg";
+import wave from "../assets/home/deadlines/wave.svg";
+import calendar from "../assets/home/deadlines/calendar.svg";
 import deadlines from "../data/deadlines";
 
 function DeadlinesSection() {
   return (
-    <div className=" bg-brand-darker relative pb-10">
+    <div className=" bg-brand-darker relative py-10">
       <div>
         <div className="flex flex-col justify-center items-center mx-auto">
           <img
@@ -25,7 +25,7 @@ function DeadlinesSection() {
         </div>
         <img
           src={wave}
-          className="absolute w-full h-full opacity-20 z-10 top-0"
+          className="absolute w-full h-48 md:h-52 lg:h-56 opacity-20 z-10 top-0 bottom-0 my-auto"
           draggable="false"
           style={{ userSelect: "none" }}
           onMouseDown={() => false}

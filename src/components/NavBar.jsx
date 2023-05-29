@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { X } from "phosphor-react";
 import MenuItem from "./MenuItem";
-import menuMobileIcon from "../assets/menu-mobile-icon.svg";
-import navLogo from "../assets/nav-logo.svg";
+import X from "../assets/navbar/X.svg";
+import menuMobileIcon from "../assets/navbar/menu-mobile-icon.svg";
+import navLogo from "../assets/navbar/nav-logo.svg";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +22,12 @@ export default function NavBar() {
               onClick={toggleMenu}
               className="flex  items-center"
             >
-              <X size={32} weight="bold" />
+              <img
+                src={X}
+                draggable="false"
+                style={{ userSelect: "none" }}
+                onMouseDown={() => false}
+              />
             </button>
 
             <div className="absolute top-[69px] bg-brand-dark w-full right-0">

@@ -1,7 +1,9 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import anniversaryLogo from "../assets/20-anos-2.svg";
+import anniversaryLogo from "../assets/about/20-anos.svg";
 import TimelineCarousel from "../components/TimelineCarousel";
+
+import earth from "../assets/about/earth.svg";
 
 export default function About() {
   return (
@@ -18,10 +20,10 @@ export default function About() {
               />
               <h3 className="font-extrabold text-xl text-green-text">Sobre</h3>
             </div>
-            <h4 className="font-extrabold text-sm text-black mb-4">
+            <h4 className="font-extrabold text-sm text-black mb-4 z-20">
               O que é um modelo da ONU?
             </h4>
-            <p className="text-calendar-text text-xs font-light">
+            <p className="text-calendar-text text-xs font-light z-20">
               Um “Modelo das Nações Unidas” é uma conferência que proporciona
               aos seus participantes uma simulação sobre temas importantes da
               agenda internacional, de acordo com as regras de procedimento das
@@ -36,8 +38,16 @@ export default function About() {
               ocorrem nos comitês dos órgãos da ONU.
             </p>
           </div>
+          <img
+            src={earth}
+            className="absolute z-10 -right-24 top-0 w-52 overflow-hidden"
+            draggable="false"
+            style={{ userSelect: "none" }}
+            onMouseDown={() => false}
+          />
         </div>
       </header>
+
       <div className="bg-brand-dark">
         <div className="max-w-screen-md p-8 text-right mx-auto">
           <h4 className="font-extrabold text-sm text-lightTone mb-4">
@@ -58,7 +68,7 @@ export default function About() {
             órgãos da ONU.
           </p>
         </div>
-        <div className="bg-white">
+        <div className="bg-white mb-6">
           <div className="max-w-screen-md text-center py-8 mx-auto">
             <h4 className="font-extrabold text-sm text-black mb-2">
               Nossa História
@@ -70,7 +80,12 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-md bg-brand-dark"></div>
+      <div className="bg-brand-dark relative flex justify-center">
+        <div className="bg-lightGray rounded-full py-2 px-6 font-extrabold text-sm text-white absolute shadow-md -top-[22.5px]">
+          Equipe
+        </div>
+        <div className="max-w-screen-md h-56"></div>
+      </div>
       <Footer />
     </main>
   );

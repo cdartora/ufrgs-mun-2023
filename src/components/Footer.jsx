@@ -1,7 +1,7 @@
-import ufrgsMunLogo from "../assets/ufrgs-mun-footer.svg";
-import facebook from "../assets/facebook.svg";
-import instagram from "../assets/instagram.svg";
-import youtube from "../assets/youtube.svg";
+import ufrgsMunLogo from "../assets/footer/ufrgs-mun.svg";
+import facebook from "../assets/footer/facebook.svg";
+import instagram from "../assets/footer/instagram.svg";
+import youtube from "../assets/footer/youtube.svg";
 
 function Footer() {
   return (
