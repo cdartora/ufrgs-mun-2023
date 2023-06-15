@@ -1,32 +1,47 @@
-import HeroImage from "../assets/20-anos.svg";
+import wave from "../assets/home/hero/wave.svg";
+import divider from "../assets/home/hero/divider.svg";
+import dividerDesktop from "../assets/home/hero/divider-desktop.svg";
+import heroContent from "../assets/home/hero/content.svg";
+import Motto from "../components/Motto.jsx";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col">
-      <div className="flex flex-col items-center md:flex-row-reverse md:justify-center md:items-center max-w-6xl mx-auto py-8 px-4 md:px-8 content">
-        {/* Image */}
-        <div className="w-full md:w-1/2 flex items-center justify-center h-full">
+    <div className="bg-darkGreen relative">
+      <div className="px-4 py-6 max-w-screen-md mx-auto">
+        <div className="mb-10 z-30 w-full flex justify-center">
           <img
-            src={HeroImage}
-            alt="Comemoração de 20 anos da conferência UFRGS Mun"
-            style={{ objectFit: "cover", height: "100%" }}
+            src={heroContent}
+            alt=""
+            className="w-96"
+            draggable="false"
+            style={{ userSelect: "none" }}
+            onMouseDown={() => false}
           />
         </div>
-        {/* Text */}
-        <div className="mt-10 md:w-1/2 flex items-center justify-center mb-10 md:mb-0 h-full">
-          <div className="text-lightTone font-bold text-3xl md:text-4xl flex flex-col text-left md:text-left content raleway">
-            <span>ATRAVESSE A</span>
-            <span>SUPERFÍCIE.</span>
-            <span>ENCONTRE</span>
-            <span>RESPOSTAS</span>
-            <span>DESCONHECIDAS</span>
-            <div className="flex flex-col font-normal text-right text-2xl barlow">
-              <span>break the surface.</span>
-              <span>reach hidden answers</span>
-            </div>
-          </div>
-        </div>
+        <Motto />
       </div>
-    </section>
+      <img
+        src={dividerDesktop}
+        className="block absolute w-full h-12 md:h-16 lg:h-20 bottom-0 z-20"
+        draggable="false"
+        style={{ userSelect: "none" }}
+        onMouseDown={() => false}
+      />
+      {/* <img
+        src={dividerDesktop}
+        className="hidden absolute w-full max-h-8 bottom-[-2px] z-20 md:block"
+        draggable="false"
+        style={{ userSelect: "none" }}
+        onMouseDown={() => false}
+      /> */}
+      <img
+        src={wave}
+        alt=""
+        className="z-10 absolute top-0 opacity-20 h-full"
+        draggable="false"
+        style={{ userSelect: "none" }}
+        onMouseDown={() => false}
+      />
+    </div>
   );
 }

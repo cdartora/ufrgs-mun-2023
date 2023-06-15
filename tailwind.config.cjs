@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        lg: "1080px",
+      },
       colors: {
         darkGreen: "#1E2F23",
         lightGreen: "#868E77",
@@ -11,6 +14,18 @@ module.exports = {
         lightGray: "#87959F",
         textDark: "#304032",
         darkBorders: "#1E2F23",
+        brand: {
+          dark: "#1e2f23",
+          grey: "#3D3D3D",
+          darker: "#1B291F",
+        },
+        calendar: {
+          grey: "#87959F",
+          text: "#3d3d3d",
+        },
+        green: {
+          text: "#2C3C2F",
+        },
       },
     },
   },
