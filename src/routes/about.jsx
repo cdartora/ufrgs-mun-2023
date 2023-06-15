@@ -13,19 +13,21 @@ export default function About() {
       <header className="text-zinc-200 relative pb-10">
         <NavBar />
         <div>
-          <div className="max-w-screen-md p-8 mx-auto">
+          <div className="max-w-screen-md p-8 mx-auto ">
             <div className="flex flex-col items-center mb-6">
               <img
                 src={anniversaryLogo}
                 alt="Logo de aniversários dos 20 anos de UFRGSMUN"
-                className="w-7"
+                className="w-7 z-20"
               />
-              <h3 className="font-extrabold text-xl text-green-text">Sobre</h3>
+              <h3 className="font-extrabold text-xl text-green-text z-20">
+                Sobre
+              </h3>
             </div>
-            <h4 className="font-extrabold text-sm text-black mb-4 z-20">
+            <h4 className="font-extrabold text-sm text-black mb-4 relative z-20">
               O que é um modelo da ONU?
             </h4>
-            <p className="text-calendar-text text-xs font-light z-20">
+            <p className="text-calendar-text text-xs font-light relative z-20">
               Um “Modelo das Nações Unidas” é uma conferência que proporciona
               aos seus participantes uma simulação sobre temas importantes da
               agenda internacional, de acordo com as regras de procedimento das
@@ -42,7 +44,7 @@ export default function About() {
           </div>
           <img
             src={earth}
-            className="absolute z-10 -right-24 top-0 w-52 overflow-hidden"
+            className="absolute z-10 right-0 top-0 w-52"
             draggable="false"
             style={{ userSelect: "none" }}
             onMouseDown={() => false}
