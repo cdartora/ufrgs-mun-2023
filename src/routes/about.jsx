@@ -2,13 +2,15 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import anniversaryLogo from "../assets/about/20-anos.svg";
 import TimelineCarousel from "../components/TimelineCarousel";
+import divider from "../assets/about/divider.svg";
+import dividerInverted from "../assets/about/divider-inverted.svg";
 
 import earth from "../assets/about/earth.svg";
 
 export default function About() {
   return (
     <main className="App">
-      <header className="text-zinc-200">
+      <header className="text-zinc-200 relative pb-10">
         <NavBar />
         <div>
           <div className="max-w-screen-md p-8 mx-auto">
@@ -45,6 +47,13 @@ export default function About() {
             style={{ userSelect: "none" }}
             onMouseDown={() => false}
           />
+          <img
+            src={divider}
+            className="absolute w-full h-12 md:h-16 lg:h-20 -bottom-[1px] z-20"
+            draggable="false"
+            style={{ userSelect: "none" }}
+            onMouseDown={() => false}
+          />
         </div>
       </header>
 
@@ -68,16 +77,23 @@ export default function About() {
             órgãos da ONU.
           </p>
         </div>
-        <div className="bg-white mb-6">
-          <div className="max-w-screen-md text-center py-8 mx-auto">
-            <h4 className="font-extrabold text-sm text-black mb-2">
-              Nossa História
-            </h4>
-            <p className="text-calendar-text text-xs font-light">
-              Clique nos anos para saber mais sobre nossa jornada até aqui!
-            </p>
-            <TimelineCarousel />
-          </div>
+      </div>
+      <div className="bg-white mb-6 relative pt-10">
+        <img
+          src={dividerInverted}
+          className="absolute w-full h-12 md:h-16 lg:h-20 -top-[1px] z-20"
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
+        <div className="max-w-screen-md text-center py-8 mx-auto">
+          <h4 className="font-extrabold text-sm text-black mb-2">
+            Nossa História
+          </h4>
+          <p className="text-calendar-text text-xs font-light">
+            Clique nos anos para saber mais sobre nossa jornada até aqui!
+          </p>
+          <TimelineCarousel />
         </div>
       </div>
       <div className="bg-brand-dark relative flex justify-center">
