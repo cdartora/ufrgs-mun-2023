@@ -4,6 +4,7 @@ import anniversaryLogo from "../assets/about/20-anos.svg";
 import TimelineCarousel from "../components/TimelineCarousel";
 import divider from "../assets/about/divider.svg";
 import dividerInverted from "../assets/about/divider-inverted.svg";
+import wave from "../assets/about/wave.svg";
 
 import earth from "../assets/about/earth.svg";
 
@@ -49,17 +50,17 @@ export default function About() {
             style={{ userSelect: "none" }}
             onMouseDown={() => false}
           />
-          <img
-            src={divider}
-            className="absolute w-full h-12 md:h-16 lg:h-20 -bottom-[1px] z-20"
-            draggable="false"
-            style={{ userSelect: "none" }}
-            onMouseDown={() => false}
-          />
         </div>
       </header>
 
-      <div className="bg-brand-dark">
+      <div className="bg-brand-dark relative py-20">
+        <img
+          src={divider}
+          className="absolute w-full h-12 md:h-16 lg:h-20 top-0 z-30"
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
         <div className="max-w-screen-md p-8 text-right mx-auto">
           <h4 className="font-extrabold text-sm text-lightTone mb-4">
             E o UFRGSMUN?
@@ -79,15 +80,23 @@ export default function About() {
             órgãos da ONU.
           </p>
         </div>
-      </div>
-      <div className="bg-white mb-6 relative pt-10">
         <img
-          src={dividerInverted}
-          className="absolute w-full h-12 md:h-16 lg:h-20 -top-[1px] z-20"
+          src={wave}
+          alt=""
+          className="z-10 absolute top-0 right-0 opacity-20 h-full"
           draggable="false"
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
         />
+        <img
+          src={dividerInverted}
+          className="absolute w-full h-12 md:h-16 lg:h-20 bottom-0 z-20"
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
+      </div>
+      <div className="bg-white mb-6 relative pt-10">
         <div className="max-w-screen-md text-center py-8 mx-auto">
           <h4 className="font-extrabold text-sm text-black mb-2">
             Nossa História
