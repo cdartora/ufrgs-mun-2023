@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import TeamSection from "../components/TeamSection";
 import anniversaryLogo from "../assets/about/20-anos.svg";
 import TimelineCarousel from "../components/TimelineCarousel";
 import divider from "../assets/about/divider.svg";
@@ -111,7 +112,9 @@ export default function About() {
         <div className="bg-lightGray rounded-full py-2 px-6 font-extrabold text-sm text-white absolute shadow-md -top-[22.5px]">
           Equipe
         </div>
-        <div className="max-w-screen-md h-56"></div>
+        <div className="max-w-screen-md">
+          <TeamSection />
+        </div>
       </div>
       <Footer />
     </main>
