@@ -1,7 +1,7 @@
 import { Tab } from "@headlessui/react";
 import team from "../data/team";
 
-import noImage from "../assets/about/no-image.jpg";
+import TeamCard from "./TeamCard";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -35,20 +35,7 @@ export default function TeamSection() {
             <Tab.Panel key={idx} className="rounded-xl p-3">
               <ul className="grid grid-cols-3 grid-flow-row">
                 {category.map((teamMember, idx) => (
-                  <li
-                    key={idx}
-                    className="relative rounded-md p-3 flex flex-col justify-start items-center gap-2 hover:bg-white/[0.12] cursor-pointer"
-                  >
-                    <div className="h-16 w-16 rounded-full overflow-hidden flex justify-center items-center">
-                      <img
-                        src={teamMember.image ? teamMember.image : noImage}
-                        alt={`${teamMember.name} foto`}
-                      />
-                    </div>
-                    <h3 className="text-sm font-medium leading-5 text-white text-center">
-                      {teamMember.name}
-                    </h3>
-                  </li>
+                  <TeamCard teamMember={teamMember} key={idx} />
                 ))}
               </ul>
             </Tab.Panel>
