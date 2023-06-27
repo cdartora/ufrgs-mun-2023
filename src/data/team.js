@@ -59,6 +59,10 @@ const academico = [
     image: amandaRosa,
   },
   {
+    name: "Amanda Marques Santos",
+    image: false,
+  },
+  {
     name: "Anselmo Berté",
     image: anselmoBerte,
   },
@@ -67,12 +71,28 @@ const academico = [
     image: augustoCamatti,
   },
   {
+    name: "Bárbara de Almeida Severo",
+    image: false,
+  },
+  {
+    name: "Bárbara de Almeida Severo",
+    image: false,
+  },
+  {
+    name: "Bárbara de Almeida Severo",
+    image: false,
+  },
+  {
     name: "Cláudio Albino",
     image: claudioAlbino,
   },
   {
     name: "Dyaila Polare",
     image: dyailaPolare,
+  },
+  {
+    name: "Fernanda Simoneto Machado",
+    image: false,
   },
   {
     name: "Gabriel Daros",
@@ -91,8 +111,16 @@ const academico = [
     image: geovanneMenezes,
   },
   {
+    name: "Giulia Moreira",
+    image: false,
+  },
+  {
     name: "Heloisa Giovanella",
     image: heloisaGiovanella,
+  },
+  {
+    name: "Henrique Leal de Moura",
+    image: false,
   },
   {
     name: "Isabela Knauth",
@@ -101,6 +129,14 @@ const academico = [
   {
     name: "João Gabriel Birck",
     image: joaoGabrielBirck,
+  },
+  {
+    name: "Henrique Leal de Moura",
+    image: false,
+  },
+  {
+    name: "João Vitor Ribeiro Gavioli",
+    image: false,
   },
   {
     name: "Larissa Pires",
@@ -131,12 +167,24 @@ const academico = [
     image: mariaFernandaFreire,
   },
   {
-    name: "Mariana Bettiol",
-    image: marianaBettiol,
+    name: "Maria Luísa Pigatto Trevisan",
+    image: false,
   },
   {
     name: "Mariana Dawas",
     image: marianaDawas,
+  },
+  {
+    name: "Mariana Dawas Vieira",
+    image: false,
+  },
+  {
+    name: "Mariana Bettiol",
+    image: marianaBettiol,
+  },
+  {
+    name: "Natália Lucena Lagoas",
+    image: false,
   },
   {
     name: "Mariana Missiaggia",
@@ -217,12 +265,24 @@ const administrativo = [
     image: alvaroGoularte,
   },
   {
+    name: "Ana Rita",
+    image: false,
+  },
+  {
     name: "Cássio Monteiro",
     image: cassioMonteiro,
   },
   {
     name: "Emanuelle Lemos",
     image: emanuelleLemos,
+  },
+  {
+    name: "Gianluca",
+    image: false,
+  },
+  {
+    name: "João Vitor de Oliveira Cunha",
+    image: false,
   },
   {
     name: "Juliana Lobato",
@@ -233,24 +293,40 @@ const administrativo = [
     image: kaliniRibeiro,
   },
   {
+    name: "Karolyne",
+    image: false,
+  },
+  {
     name: "Laura Rossi",
     image: lauraRossi,
+  },
+  {
+    name: "Laura Oliveria",
+    image: false,
   },
   {
     name: "Maria Antônia Vieira",
     image: mariaAntoniaVieira,
   },
   {
+    name: "Marina Almeida Gonzalez Papadópolis",
+    image: false,
+  },
+  {
     name: "Paola Togni",
     image: paolaTogni,
   },
   {
-    name: "Pedro Zandona",
+    name: "Pedro Zandoná",
     image: pedroZandona,
   },
   {
     name: "Rafael Both",
     image: rafaelBoth,
+  },
+  {
+    name: "Sthéfany Franciny",
+    image: false,
   },
 ];
 

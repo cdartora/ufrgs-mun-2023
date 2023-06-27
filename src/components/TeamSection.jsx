@@ -1,6 +1,8 @@
 import { Tab } from "@headlessui/react";
 import team from "../data/team";
 
+import noImage from "../assets/about/no-image.jpg";
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -11,7 +13,7 @@ export default function TeamSection() {
     <div className="w-full max-w-md px-2 py-16 sm:px-0">
       <Tab.Group>
         <Tab.List className="flex md:space-x-2 space-x-1 rounded-xl p-1">
-          {["Acadêmico", "Administrativo", "Secretariado"].map((category) => (
+          {["Secretariado", "Administrativo", "Acadêmico"].map((category) => (
             <Tab
               key={category}
               className={({ selected }) =>
@@ -39,7 +41,7 @@ export default function TeamSection() {
                   >
                     <div className="h-16 w-16 rounded-full overflow-hidden flex justify-center items-center">
                       <img
-                        src={teamMember.image}
+                        src={teamMember.image ? teamMember.image : noImage}
                         alt={`${teamMember.name} foto`}
                       />
                     </div>

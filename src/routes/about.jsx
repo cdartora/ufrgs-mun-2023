@@ -6,6 +6,7 @@ import TimelineCarousel from "../components/TimelineCarousel";
 import divider from "../assets/about/divider.svg";
 import dividerInverted from "../assets/about/divider-inverted.svg";
 import wave from "../assets/about/wave.svg";
+import wave2 from "../assets/about/wave-2.svg";
 
 import earth from "../assets/about/earth.svg";
 
