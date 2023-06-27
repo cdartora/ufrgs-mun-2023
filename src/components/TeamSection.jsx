@@ -16,11 +16,11 @@ export default function TeamSection() {
               key={category}
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-white px-2 md:px-4",
+                  "w-full rounded-lg py-2.5 text-sm font-medium text-darkGreen leading-5 px-2 md:px-4",
                   "ring-white ring-opacity-60 ring-offset-2 ring-offset-green focus:outline-none focus:ring-2",
                   selected
-                    ? "bg-white shadow text-darkGreen"
-                    : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                    ? "bg-white shadow text-green-text font-bold"
+                    : "text-white hover:bg-white/[0.12]"
                 )
               }
             >
@@ -35,7 +35,7 @@ export default function TeamSection() {
                 {category.map((teamMember, idx) => (
                   <li
                     key={idx}
-                    className="relative rounded-md p-3 flex flex-col justify-center items-center gap-2"
+                    className="relative rounded-md p-3 flex flex-col justify-start items-center gap-2 hover:bg-white/[0.12] cursor-pointer"
                   >
                     <div className="h-16 w-16 rounded-full overflow-hidden flex justify-center items-center">
                       <img
