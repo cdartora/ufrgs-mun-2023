@@ -7,6 +7,7 @@ import divider from "../assets/about/divider.svg";
 import dividerInverted from "../assets/about/divider-inverted.svg";
 import wave from "../assets/about/wave.svg";
 import wave2 from "../assets/about/wave-2.svg";
+import dialog from "../assets/about/dialog.svg";
 
 import earth from "../assets/about/earth.svg";
 
@@ -114,6 +115,14 @@ export default function About() {
           Equipe
         </div>
         <div className="max-w-screen-md">
+          <div className="pt-10 px-4 text-center flex flex-col items-center">
+            <img src={dialog} alt="balão de texto" width={35} />
+            <p className="font-light text-white text-sm">
+              <span className="font-bold">Participantes</span> com este{" "}
+              <span className="font-bold">ícone</span> querem
+              <span className="font-bold"> compartilhar suas histórias!</span>
+            </p>
+          </div>
           <TeamSection />
         </div>
       </div>

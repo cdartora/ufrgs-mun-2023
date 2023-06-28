@@ -93,6 +93,12 @@ const academico = [
       "Cláudio Albino é estudante do quarto ano do curso de Relações Internacionais da UFRGS, atuando no UFRGSMUN 2023 como diretor acadêmico do Conselho de Segurança das Nações Unidas (CSNU). Já participou de outros projetos de extensão parceiros ao longo da graduação, como o UFRGSMUNDI, o Relações Internacionais para Educadores (RIPE) e a Atlântica Consultoria Internacional, na qual ocupou o cargo de diretor comercial. Já simulou em diferentes eventos, participando do UFRGSMUN 2022 como delegado da Comissão de Desarmamento das Nações Unidas (CDNU). Tem interesse nas áreas de Política Externa e Segurança Internacional.",
   },
   {
+    name: "Cecília Malta Martini",
+    image: false,
+    description:
+      "Cecília é estudante do quarto semestre do curso de Jornalismo na UFRGS. Além de participar da equipe acadêmica do UFRGSMUN 2023 no comitê da Press, é editora de textos do projeto de extensão de jornalismo cultural Caderno 2. Atualmente trabalha na produção da rádio FM Cultura.",
+  },
+  {
     name: "Dyaila Polare",
     image: dyailaPolare,
     description:
@@ -181,10 +187,6 @@ const academico = [
     image: leonardoRosa,
     description:
       "Leonardo é estudante do terceiro ano do curso de Filosofia - Licenciatura da UFRGS. Compõe a equipe acadêmica do UFRGSMUN 2023 no comitê United Nations Human Rights Council, também integra a equipe de outro projeto de extensão da universidade, como o PIBID - O Programa Institucional de Bolsas de Iniciação à Docência. Possui interesse nas áreas de Política Externa, Diplomacia e Direitos Humanos.",
-  },
-  {
-    name: "Leonardo Rosa",
-    image: leonardoRosa,
   },
   {
     name: "Lucas Lixinski",
@@ -295,6 +297,12 @@ const academico = [
     image: victorLucena,
     description:
       "Estudante do segundo ano do curso de relações internacionais na UFRGS e membro da equipe acadêmica do UFRGSMUN enquanto diretor do DPS - UA. Além disso, integra a equipe acadêmica do UFRGSMUN BIS e é membro de duas secretarias do Centro Estudantil de Relações Internacionais (CERI).",
+  },
+  {
+    name: "João Pedro Lopes Gonçalves",
+    image: false,
+    description:
+      "João Pedro é estudante do quinto semestre do curso de Relações Internacionais da UFRGS. Além de participar da equipe acadêmica do UFRGSMUN 2023 no comitê United Nations Security Council, também integra a equipe coordenadora do Relações Internacionais Para Educadores (RIPE) e da Revista Perspectiva. Possui interesse nas áreas de Política Externa, Diplomacia, Economia Política, Teoria do Desenvolvimento, voltadas à região do Leste Asiático.",
   },
   {
     name: "Vinícius Morele",
