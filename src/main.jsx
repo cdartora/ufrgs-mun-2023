@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./main.css";
 import Root from "./routes/root";
 import About from "./routes/about";
+import Conference from "./routes/Conference";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/conference",
+    element: <Conference />,
   },
 ]);
 

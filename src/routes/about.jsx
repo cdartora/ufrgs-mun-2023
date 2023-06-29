@@ -99,6 +99,7 @@ export default function About() {
           onMouseDown={() => false}
         />
       </div>
+
       <div className="bg-white mb-6 relative pt-10">
         <div className="max-w-screen-md text-center py-8 mx-auto">
           <h4 className="font-extrabold text-sm text-black mb-2">
@@ -110,6 +111,7 @@ export default function About() {
           <TimelineCarousel />
         </div>
       </div>
+
       <div className="bg-brand-dark relative flex justify-center">
         <div className="bg-lightGray rounded-full py-2 px-6 font-extrabold text-sm text-white absolute shadow-md -top-[22.5px]">
           Equipe
@@ -126,6 +128,7 @@ export default function About() {
           <TeamSection />
         </div>
       </div>
+
       <Footer />
     </main>
   );
