@@ -8,7 +8,6 @@ function classNames(...classes) {
 }
 
 export default function TeamSection() {
-  console.log(team);
   return (
     <div className="w-full max-w-md px-2 py-16 sm:px-0">
       <Tab.Group>

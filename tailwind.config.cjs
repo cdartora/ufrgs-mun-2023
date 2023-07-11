@@ -16,8 +16,10 @@ module.exports = {
         darkBorders: "#1E2F23",
         brand: {
           dark: "#1e2f23",
+          white: "#D9D9D9",
           grey: "#3D3D3D",
           darker: "#1B291F",
+          lightGreen: "#868E77",
         },
         calendar: {
           grey: "#87959F",
@@ -29,5 +31,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@headlessui/tailwindcss")],
 };

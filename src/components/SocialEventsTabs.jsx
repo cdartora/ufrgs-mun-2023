@@ -1,117 +1,151 @@
-import { useState } from "react";
 import { Tab } from "@headlessui/react";
+import classNames from "classnames";
+import polygon from "../assets/conference/polygon.svg";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export default function Example() {
-  let [categories] = useState({
-    Recent: [
-      {
-        id: 1,
-        title: "Does drinking coffee make you smarter?",
-        date: "5h ago",
-        commentCount: 5,
-        shareCount: 2,
-      },
-      {
-        id: 2,
-        title: "So you've bought coffee... now what?",
-        date: "2h ago",
-        commentCount: 3,
-        shareCount: 2,
-      },
-    ],
-    Popular: [
-      {
-        id: 1,
-        title: "Is tech making coffee better or worse?",
-        date: "Jan 7",
-        commentCount: 29,
-        shareCount: 16,
-      },
-      {
-        id: 2,
-        title: "The most innovative things happening in coffee",
-        date: "Mar 19",
-        commentCount: 24,
-        shareCount: 12,
-      },
-    ],
-    Trending: [
-      {
-        id: 1,
-        title: "Ask Me Anything: 10 answers to your questions about coffee",
-        date: "2d ago",
-        commentCount: 9,
-        shareCount: 5,
-      },
-      {
-        id: 2,
-        title: "The worst advice we've ever heard about coffee",
-        date: "4d ago",
-        commentCount: 1,
-        shareCount: 2,
-      },
-    ],
-  });
+export default function SocialEventsTabs() {
+  const schedule = [
+    {
+      id: 1,
+      day: "31",
+      month: "Out",
+      schedule: [
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+      ],
+    },
+    {
+      id: 2,
+      day: "1",
+      month: "Nov",
+      schedule: [
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+      ],
+    },
+    {
+      id: 3,
+      day: "2",
+      month: "Nov",
+      schedule: [
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+      ],
+    },
+    {
+      id: 4,
+      day: "3",
+      month: "Nov",
+      schedule: [
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+      ],
+    },
+    {
+      id: 5,
+      day: "4",
+      month: "Nov",
+      schedule: [
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+        {
+          hour: "17:00h - 20:00h",
+          description:
+            "Dados sobre os eventos que ocorrerão nesta data e horário",
+        },
+      ],
+    },
+  ];
 
   return (
-    <div className="w-full max-w-md px-2 py-16 sm:px-0">
+    <div className="w-full flex space-x-10 items-start justify-center max-w-md px-2 py-16 sm:px-0">
       <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
-          {Object.keys(categories).map((category) => (
+        <Tab.List className="flex flex-col space-y-5 rounded-xl p-1">
+          {schedule.map((eventDay) => (
             <Tab
-              key={category}
+              key={eventDay.id}
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700",
-                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
+                  "w-16 h-16 rounded-2xl shadow-lg p-2 text-md font-bold leading-5 bg-brand-white",
+                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-darkGreen focus:outline-none focus:ring-2",
                   selected
-                    ? "bg-white shadow"
-                    : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                    ? "ui-selected:bg-brand-lightGreen ui-selected:text-brand-white"
+                    : "text-brand-grey hover:bg-white/70"
                 )
               }
             >
-              {category}
+              <div className="relative flex flex-col items-center justify-center leading-5">
+                <span>{eventDay.day}</span>
+                <span>{eventDay.month}</span>
+
+                <img
+                  src={polygon}
+                  className="ui-selected:block hidden absolute -right-7"
+                  draggable="false"
+                  style={{ userSelect: "none" }}
+                  onMouseDown={() => false}
+                />
+              </div>
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels className="mt-2">
-          {Object.values(categories).map((posts, idx) => (
+        <Tab.Panels className="mt-2 h-full">
+          {schedule.map((eventDay, idx) => (
             <Tab.Panel
-              key={idx}
-              className={classNames(
-                "rounded-xl bg-white p-3",
-                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
-              )}
+              key={eventDay.id}
+              className="rounded-xl bg-brand-lightGreen p-3"
             >
               <ul>
-                {posts.map((post) => (
-                  <li
-                    key={post.id}
-                    className="relative rounded-md p-3 hover:bg-gray-100"
-                  >
-                    <h3 className="text-sm font-medium leading-5">
-                      {post.title}
+                {eventDay.schedule.map(({ hour, description }, idx) => (
+                  <li key={idx} className="relative rounded-md p-3">
+                    <h3 className="font-bold leading-5 text-darkGreen">
+                      {hour}
                     </h3>
-
-                    <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
-                      <li>{post.date}</li>
-                      <li>&middot;</li>
-                      <li>{post.commentCount} comments</li>
-                      <li>&middot;</li>
-                      <li>{post.shareCount} shares</li>
-                    </ul>
-
-                    <a
-                      href="#"
-                      className={classNames(
-                        "absolute inset-0 rounded-md",
-                        "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
-                      )}
-                    />
+                    <span className="text-sm text-white">{description}</span>
                   </li>
                 ))}
               </ul>

@@ -101,7 +101,7 @@ function Conference() {
       </div>
 
       <div className="bg-darkGreen mb-6 relative">
-        <div className="max-w-screen-md p-8 mx-auto">
+        <div className="max-w-screen-md p-8 mx-auto flex flex-col items-center">
           <h4 className="font-extrabold text-center text-lightTone mb-2">
             Eventos Sociais
           </h4>
