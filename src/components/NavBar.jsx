@@ -55,7 +55,12 @@ export default function NavBar() {
                 closeMenu={toggleMenu}
                 href="/conference"
               />
-              <MenuItem label="Comitês" mobile={true} closeMenu={toggleMenu} />
+              <MenuItem
+                label="Comitês"
+                mobile={true}
+                closeMenu={toggleMenu}
+                href="/committees"
+              />
               <MenuItem
                 label="Inscrições"
                 mobile={true}
