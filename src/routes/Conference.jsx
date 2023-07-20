@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import SocialEventsTabs from "../components/SocialEventsTabs";
+
 import anniversaryLogo from "../assets/conference/20-anos.svg";
 import earth from "../assets/conference/earth.svg";
 import divider from "../assets/conference/divider.svg";
@@ -12,7 +13,7 @@ function Conference() {
     <main>
       <header className="text-lightTone relative">
         <NavBar />
-        <div className="bg-darkGreen text-lightTone">
+        <div className="bg-darkGreen">
           <div className="max-w-screen-md p-8 mx-auto ">
             <div className="flex flex-col items-center mb-6">
               <img
