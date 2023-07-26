@@ -2,12 +2,13 @@ import React from "react";
 
 function Motto() {
   return (
-    <div className="text-sm mb-20">
+    <div className="mb-20 text-lightTone">
       <h4 className="italic font-medium">Motto</h4>
-      <h4 className="font-extrabold">
-        Desafiando limites e buscando soluções profundas
-      </h4>
-      <p className="font-light text-xs">
+      <div className="font-black mb-2 leading-5 text-lg">
+        <h4>Desafiando limites</h4>
+        <h4>e buscando soluções profundas</h4>
+      </div>
+      <p className="font-light">
         Em 2023, o UFRGSMUN pretende extrapolar as barreiras do superficial, do
         dado, do trivial, procurando ir além de meras soluções paliativas, com a
         consciência de que respostas eficazes são apenas alcançadas quando

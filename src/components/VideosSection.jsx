@@ -5,19 +5,15 @@ import dividerDesktop from "../assets/home/videos/divider-desktop.svg";
 function VideosSection() {
   return (
     <div className="max-w-screen-md mx-auto flex flex-col items-center justify-center px-4 pb-16 mt-5">
-      <div className="px-6 z-20">
-        <div className="w-full font-extrabold text-2xl text-brand-grey mb-2">
-          Teaser
-        </div>
+      <div className="px-6 z-20 font-black text-2xl text-darkTone">
+        <div className="w-full mb-2">Teaser</div>
         <iframe
           className="youtube rounded-2xl shadow-xlg"
           src="https://www.youtube-nocookie.com/embed/JwkBcE0qRdM?rel=0&amp;controls=0&amp;showinfo=0"
           allow="autoplay; encrypted-media"
           allowFullScreen=""
         ></iframe>
-        <div className="w-full font-extrabold text-2xl text-brand-grey mb-2 mt-4">
-          Mais vídeos
-        </div>
+        <div className="w-full mb-2 mt-4">Mais vídeos</div>
         <iframe
           className="youtube rounded-2xl shadow-xlg z-20"
           src="https://www.youtube-nocookie.com/embed/JwkBcE0qRdM?rel=0&amp;controls=0&amp;showinfo=0"

@@ -10,6 +10,8 @@ module.exports = {
         darkGreen: "#1E2F23",
         lightGreen: "#868E77",
         lightTone: "#D3D6C6",
+        darkTone: "#3D3D3D",
+        almostWhite: "#F8F9FA",
         darkGray: "#6B7983",
         lightGray: "#87959F",
         textDark: "#304032",

@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <div className="bg-darkGreen relative">
       <div className="px-4 py-6 max-w-screen-md mx-auto">
-        <div className="mb-10 z-30 w-full flex justify-center">
+        <div className="mt-4 mb-2 z-30 w-full flex justify-center">
           <img
             src={heroContent}
             alt=""
@@ -37,7 +37,7 @@ export default function HeroSection() {
       <img
         src={wave}
         alt=""
-        className="z-10 absolute top-0 opacity-20 h-full"
+        className="z-10 absolute -top-40 opacity-10 h-full"
         draggable="false"
         style={{ userSelect: "none" }}
         onMouseDown={() => false}
