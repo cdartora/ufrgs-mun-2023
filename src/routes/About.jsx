@@ -14,7 +14,7 @@ import earth from "../assets/about/earth.svg";
 export default function About() {
   return (
     <main className="App">
-      <header className="text-zinc-200 relative pb-10">
+      <header className="relative pb-10">
         <NavBar />
         <div>
           <div className="max-w-screen-md p-8 mx-auto ">
@@ -24,14 +24,12 @@ export default function About() {
                 alt="Logo de aniversários dos 20 anos de UFRGSMUN"
                 className="w-7 z-20"
               />
-              <h3 className="font-extrabold text-xl text-green-text z-20">
-                Sobre
-              </h3>
+              <h3 className="font-black text-2xl text-darkTone z-20">Sobre</h3>
             </div>
-            <h4 className="font-extrabold text-sm text-black mb-4 relative z-20">
+            <h4 className="font-black text-lg mb-4 relative z-20 text-darkTone">
               O que é um modelo da ONU?
             </h4>
-            <p className="text-calendar-text text-xs font-light relative z-20">
+            <p className="text-darkTone font-light relative z-20">
               Um “Modelo das Nações Unidas” é uma conferência que proporciona
               aos seus participantes uma simulação sobre temas importantes da
               agenda internacional, de acordo com as regras de procedimento das
@@ -64,11 +62,9 @@ export default function About() {
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
         />
-        <div className="max-w-screen-md p-8 text-right mx-auto">
-          <h4 className="font-extrabold text-sm text-lightTone mb-4">
-            E o UFRGSMUN?
-          </h4>
-          <p className="text-lightTone text-xs font-light">
+        <div className="max-w-screen-md p-8 text-right text-lightTone mx-auto">
+          <h4 className="font-black text-lg mb-4">E o UFRGSMUN?</h4>
+          <p className="font-light">
             Um “Modelo das Nações Unidas” é uma conferência que proporciona aos
             seus participantes uma simulação sobre temas importantes da agenda
             internacional, de acordo com as regras de procedimento das próprias
@@ -100,12 +96,10 @@ export default function About() {
         />
       </div>
 
-      <div className="bg-white mb-6 relative pt-10">
+      <div className="bg-white mb-6 relative pt-10 text-darkTone">
         <div className="max-w-screen-md text-center py-8 mx-auto">
-          <h4 className="font-extrabold text-sm text-black mb-2">
-            Nossa História
-          </h4>
-          <p className="text-calendar-text text-xs font-light">
+          <h4 className="font-extrabold text-lg mb-2">Nossa História</h4>
+          <p className="font-light">
             Clique nos anos para saber mais sobre nossa jornada até aqui!
           </p>
           <TimelineCarousel />
@@ -113,13 +107,13 @@ export default function About() {
       </div>
 
       <div className="bg-brand-dark relative flex justify-center">
-        <div className="bg-lightGray rounded-full py-2 px-6 font-extrabold text-sm text-white absolute shadow-md -top-[22.5px]">
+        <div className="bg-lightGray rounded-full py-2 px-6 font-black text-lg text-almostWhite absolute shadow-md -top-[26px]">
           Equipe
         </div>
-        <div className="max-w-screen-md">
-          <div className="pt-10 px-4 text-center flex flex-col items-center">
+        <div className="max-w-screen-md flex flex-col items-center">
+          <div className="mt-4 pt-10 px-4 text-center flex flex-col items-center">
             <img src={dialog} alt="balão de texto" width={35} />
-            <p className="font-light text-white text-sm">
+            <p className="font-light text-almostWhite">
               <span className="font-bold">Participantes</span> com este{" "}
               <span className="font-bold">ícone</span> querem
               <span className="font-bold"> compartilhar suas histórias!</span>

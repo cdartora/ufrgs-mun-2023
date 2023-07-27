@@ -110,11 +110,11 @@ export default function SocialEventsTabs() {
               key={eventDay.id}
               className={({ selected }) =>
                 classNames(
-                  "w-16 h-16 rounded-2xl shadow-lg p-2 text-md font-bold leading-5 bg-brand-white",
+                  "w-16 h-16 rounded-2xl shadow-lg p-2 text-md font-bold leading-5 bg-almostWhite",
                   "ring-white ring-opacity-60 ring-offset-2 ring-offset-darkGreen focus:outline-none focus:ring-2",
                   selected
-                    ? "ui-selected:bg-brand-lightGreen ui-selected:text-brand-white"
-                    : "text-brand-grey hover:bg-white/70"
+                    ? "ui-selected:bg-almostWhite ui-selected:text-darkTone"
+                    : "text-brand-grey hover:bg-white/70 opacity-30"
                 )
               }
             >
@@ -137,15 +137,17 @@ export default function SocialEventsTabs() {
           {schedule.map((eventDay, idx) => (
             <Tab.Panel
               key={eventDay.id}
-              className="rounded-xl bg-brand-lightGreen p-3"
+              className="rounded-xl bg-almostWhite p-3"
             >
               <ul>
                 {eventDay.schedule.map(({ hour, description }, idx) => (
                   <li key={idx} className="relative rounded-md p-3">
-                    <h3 className="font-bold leading-5 text-darkGreen">
+                    <h3 className="font-bold leading-5 text-darkTone">
                       {hour}
                     </h3>
-                    <span className="text-sm text-white">{description}</span>
+                    <span className="text-sm text-darkTone leading-4">
+                      {description}
+                    </span>
                   </li>
                 ))}
               </ul>

@@ -21,13 +21,13 @@ function Conference() {
                 alt="Logo de aniversários dos 20 anos de UFRGSMUN"
                 className="w-7 z-20"
               />
-              <h3 className="font-extrabold text-xl z-20">Conferência</h3>
+              <h3 className="font-black text-2xl z-20">Conferência</h3>
             </div>
-            <h4 className="font-extrabold relative z-20">Local</h4>
-            <h5 className="font-light italic mb-4 text-sm">
+            <h4 className="font-black text-lg relative z-20">Local</h4>
+            <h5 className="font-light italic mb-4">
               Hotel Plaza São Rafael - Av. Alberto Bins, 514
             </h5>
-            <p className="text-lightTone text-sm font-light relative z-20">
+            <p className="font-light relative z-20">
               O UFRGSMUN acontecerá mais uma vez no Plaza São Rafael Hotel. É um
               dos hotéis mais conceituados de Porto Alegre, devido aos seus
               serviços de alta qualidade e diversidade de quartos para eventos,
@@ -64,9 +64,9 @@ function Conference() {
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
         />
-        <div className="max-w-screen-md p-8 text-right mx-auto">
-          <h4 className="font-extrabold text-darkGreen mb-4">Acomodação</h4>
-          <p className="text-darkGreen text-sm font-light">
+        <div className="max-w-screen-md p-8 text-right text-darkTone mx-auto">
+          <h4 className="font-black text-lg mb-4">Acomodação</h4>
+          <p className="font-light">
             O UFRGS Model United Nations, projeto idealizado e criado por alunos
             da Universidade Federal do Rio Grande do Sul (UFRGS), foi a primeira
             conferência MUN a surgir no Sul do Brasil. Ao longo de seus vinte
@@ -103,15 +103,15 @@ function Conference() {
 
       <div className="bg-darkGreen mb-6 relative">
         <div className="max-w-screen-md p-8 mx-auto flex flex-col items-center">
-          <h4 className="font-extrabold text-center text-lightTone mb-2">
+          <h4 className="font-black text-lg text-center text-lightTone mb-2">
             Eventos Sociais
           </h4>
-          <p className="text-lightTone text-sm font-light mb-2">
+          <p className="text-lightTone font-light mb-2">
             Debater e simular o dia todo pode ser desgastante, sabemos disso.
             Que melhor maneira de recarregar suas energias do que curtir uma
             noite ao lado de amigos depois de um dia de trabalho duro?
           </p>
-          <p className="text-lightTone text-sm font-light">
+          <p className="text-lightTone font-light">
             Nossos eventos sociais proporcionam a você a chance de relaxar,
             fugir do comum, se divertir e aproveitar ao máximo a sua experiência
             no UFRGSMUN. O nosso pacote social, o qual inclui a Festa Open Bar à

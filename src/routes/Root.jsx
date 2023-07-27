@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 export default function Root() {
   return (
     <main className="App">
-      <header className="text-zinc-200">
+      <header>
         <NavBar />
         <HeroSection />
       </header>

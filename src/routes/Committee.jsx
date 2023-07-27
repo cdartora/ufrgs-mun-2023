@@ -76,10 +76,12 @@ function Committee() {
                 alt="Logo de aniversários dos 20 anos de UFRGSMUN"
                 className="w-7 z-20"
               />
-              <h3 className="font-extrabold text-xl z-20">Comitês</h3>
+              <h3 className="font-black text-2xl z-20">Comitês</h3>
             </div>
-            <h4 className="font-extrabold mb-4 relative z-20">Visão Geral</h4>
-            <p className="text-sm font-light relative z-20">
+            <h4 className="font-black text-lg mb-4 relative z-20">
+              Visão Geral
+            </h4>
+            <p className="font-light relative z-20">
               Em 2023, nossos comitês e tópicos abarcarão órgãos oficiais das
               Nações Unidas e cúpulas de organizações internacionais, além dos
               nossos tradicionais Comitê de Imprensa e o Gabinete de Crises.
