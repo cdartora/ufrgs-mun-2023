@@ -1,12 +1,13 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import TeamSection from "../components/TeamSection";
-import anniversaryLogo from "../assets/about/20-anos.svg";
 import TimelineCarousel from "../components/TimelineCarousel";
-import divider from "../assets/about/divider.svg";
+
+import anniversaryLogo from "../assets/about/20-anos.svg";
+import divider from "../assets/about/divider.svg"
 import dividerInverted from "../assets/about/divider-inverted.svg";
 import wave from "../assets/about/wave.svg";
-import wave2 from "../assets/about/wave-2.svg";
+// import wave2 from "../assets/about/wave-2.svg";
 import dialog from "../assets/about/dialog.svg";
 
 import earth from "../assets/about/earth.svg";
