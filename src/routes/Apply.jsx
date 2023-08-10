@@ -1,9 +1,9 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import ApplyTabs from "../components/ApplyTabs"
+import ApplyTabs from "../components/ApplyTabs";
 
 import anniversaryLogo from "../assets/apply/20-anos.svg";
-import divider from "../assets/about/divider.svg"
+import divider from "../assets/about/divider.svg";
 import earth from "../assets/about/earth.svg";
 
 export default function Apply() {
@@ -19,13 +19,19 @@ export default function Apply() {
                 alt="Logo de aniversários dos 20 anos de UFRGSMUN"
                 className="w-7 z-20"
               />
-              <h3 className="font-black text-2xl text-darkTone z-20">Inscrições</h3>
+              <h3 className="font-black text-2xl text-darkTone z-20">
+                Inscrições
+              </h3>
             </div>
             <h4 className="font-black text-lg mb-4 relative z-20 text-darkTone">
               Visão Geral
             </h4>
             <p className="text-darkTone font-light relative z-20">
-             Inscrever-se no UFRGSMUN 2023 é bastante fácil! Aqui, você encontrará alguns passos para seguir, além da nossa matriz de países, dos formulários de inscrição e das Perguntas Frequentes. Atenção: as inscrições se encerram no dia 16 de setembro ou até acabarem as vagas! 
+              Inscrever-se no UFRGSMUN 2023 é bastante fácil! Aqui, você
+              encontrará alguns passos para seguir, além da nossa matriz de
+              países, dos formulários de inscrição e das Perguntas Frequentes.
+              Atenção: as inscrições se encerram no dia 16 de setembro ou até
+              acabarem as vagas!
             </p>
           </div>
           <img
@@ -46,9 +52,11 @@ export default function Apply() {
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
         />
-        <div className="max-w-screen-md p-8 text-right text-lightTone mx-auto">
+        <div className="max-w-screen-md p-4 md:p-8 text-right text-lightTone mx-auto">
           <h4 className="font-black text-lg mb-4">Como se inscrever?</h4>
-          <ApplyTabs />
+          <div className="flex justify-center w-full">
+            <ApplyTabs />
+          </div>
         </div>
       </div>
 
