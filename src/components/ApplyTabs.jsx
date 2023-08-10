@@ -56,7 +56,7 @@ function ApplyTabs() {
                   key={step.name}
                   className={({ selected }) =>
                     classNames(
-                      "z-20 w-16 h-16 md:w-20 md:h-20 p-2 overflow-hidden text-base font-bold bg-almostWhite rounded-full",
+                      "z-20 w-16 h-16 md:w-20 md:h-20 p-2 overflow-hidden text-base md:text-xl font-bold bg-almostWhite rounded-full",
                       "focus:outline-none focus:ring-2",
                       selected
                         ? "ui-selected:bg-almostWhite ui-selected:text-darkTone"
