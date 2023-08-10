@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import ApplyTabs from "../components/ApplyTabs"
 
 import anniversaryLogo from "../assets/apply/20-anos.svg";
 import divider from "../assets/about/divider.svg"
@@ -46,21 +47,8 @@ export default function Apply() {
           onMouseDown={() => false}
         />
         <div className="max-w-screen-md p-8 text-right text-lightTone mx-auto">
-          <h4 className="font-black text-lg mb-4">E o UFRGSMUN?</h4>
-          <p className="font-light">
-            Um “Modelo das Nações Unidas” é uma conferência que proporciona aos
-            seus participantes uma simulação sobre temas importantes da agenda
-            internacional, de acordo com as regras de procedimento das próprias
-            reuniões das Nações Unidas. Durante a simulação, os participantes
-            atuarão como delegados de diversos países, com a responsabilidade de
-            sustentar suas posições ao longo das discussões e defender seus
-            interesses de acordo com suas respectivas políticas externas. Além
-            disso, os MUNs oferecem a oportunidade de atuar, além de
-            representantes diplomáticos, como Chefes de Estado, Ministros,
-            juízes ou mesmo como jornalistas no comitê de imprensa
-            internacional, cobrindo as discussões que ocorrem nos comitês dos
-            órgãos da ONU.
-          </p>
+          <h4 className="font-black text-lg mb-4">Como se inscrever?</h4>
+          <ApplyTabs />
         </div>
       </div>
 
