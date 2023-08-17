@@ -6,7 +6,8 @@ import anniversaryLogo from "../assets/apply/20-anos.svg";
 import divider from "../assets/about/divider.svg";
 import dividerInverted from "../assets/about/divider-inverted.svg";
 import earth from "../assets/about/earth.svg";
-import wave from "../assets/apply/wave.svg";
+import notice from "../assets/apply/notice.svg";
+import form from "../assets/apply/form.svg";
 
 export default function Apply() {
   return (
@@ -77,37 +78,73 @@ export default function Apply() {
         />
       </div>
 
-      <div className="max-w-screen-md p-4 md:p-8 text-right text-lightTone mx-auto z-20"></div>
-      <div>
-        <div>Matriz de países</div>
-        <button>Countris</button>
-        <button>Matriz de Países</button>
-      </div>
-      <div>
-        <div>Formulários</div>
-        <p>As inscrições estarão abertas</p>
-        <p>até o dia 16 de setembro ou até acabarem as vagas.</p>
-        <div>
-          <button>Formulário A</button>
-          <button>Press</button>
-          <button>CSI-OH</button>
+      <div className="max-w-screen-md p-4 md:p-8 text-right text-darkTone mx-auto z-20">
+        <div className="flex flex-col items-center mt-10">
+          <div className="py-2 px-10 bg-darkGreen font-black text-almostWhite rounded-full">
+            Matriz de países
+          </div>
+          <div className="flex justify-center gap-4 mt-4 text-sm md:flex-row flex-col w-full">
+            <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
+              Countries
+            </button>
+            <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
+              Matriz de Países
+            </button>
+          </div>
         </div>
+
+        <div className="mt-10">
+          <div className="flex justify-center items-center gap-2">
+            <img src={form} alt="" className="w-5" />
+            <h3 className="font-black text-2xl text-darkTone z-20">
+              Formulários
+            </h3>
+            <div className="h-[1.5px] bg-darkGreen w-full" />
+          </div>
+          <div className="mt-4">
+            <div className="text-left font-light">
+              <p>As inscrições estarão abertas</p>
+              <p>até o dia 16 de setembro ou até acabarem as vagas.</p>
+            </div>
+            <div className="flex gap-4 mt-4 font-normal text-sm flex-col md:flex-row">
+              <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
+                Formulário A
+              </button>
+              <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
+                Press
+              </button>
+              <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
+                CSI-OH
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <div className="text-left flex justify-center items-center gap-2">
+            <div className="h-[1.5px] bg-darkGreen w-full" />
+            <h3 className="font-black text-2xl text-darkTone z-20 inline whitespace-nowrap">
+              Edital de Benefícios
+            </h3>
+            <img src={notice} alt="" className="w-5" />
+          </div>
+          <p className="font-light my-4">
+            Reconhecendo a limitação imposta pelos custos relacionados à
+            participação de Modelos das Nações Unidas e seguindo com o objetivo
+            de democratizar cada vez mais estes espaços, o UFRGSMUN lança mais
+            uma edição do Edital de Benefícios. Serão concedidas 10 vagas
+            isentas de inscrição para aquelas/es que preencherem os requisitos
+            do edital, além de um desconto no Pacote de Eventos Sociais e
+            preferência na Hospedagem Solidária oferecida pela equipe do
+            projeto.Interessadas/os devem enviar a documentação para
+            ufrgsmun@gmail.com até o dia 02/09.
+          </p>
+          <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6">
+            Edital
+          </button>
+        </div>
+        <div />
       </div>
-      <div>
-        <div>Edital de benefícios</div>
-        <p>
-          Reconhecendo a limitação imposta pelos custos relacionados à
-          participação de Modelos das Nações Unidas e seguindo com o objetivo de
-          democratizar cada vez mais estes espaços, o UFRGSMUN lança mais uma
-          edição do Edital de Benefícios. Serão concedidas 10 vagas isentas de
-          inscrição para aquelas/es que preencherem os requisitos do edital,
-          além de um desconto no Pacote de Eventos Sociais e preferência na
-          Hospedagem Solidária oferecida pela equipe do projeto.Interessadas/os
-          devem enviar a documentação para ufrgsmun@gmail.com até o dia 02/09.
-        </p>
-        <button>Edital</button>
-      </div>
-      <div />
 
       <div className="bg-brand-dark relative py-20 flex flex-col justify-center items-center">
         <img
@@ -117,13 +154,16 @@ export default function Apply() {
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
         />
-
-        <h3 className="font-black text-2xl text-almostWhite z-20">FAQ</h3>
-        <p>
-          Quer tirar dúvidas rápidas sobre o UFRGSMUN? Confira aqui tudo o que
-          você precisa saber para participar da edição desse ano!
-        </p>
-        <button>FAQ</button>
+        <div className="max-w-screen-md p-8 flex flex-col justify-center items-center text-almostWhite">
+          <h3 className="font-black text-2xl">FAQ</h3>
+          <p className="font-light my-4">
+            Quer tirar dúvidas rápidas sobre o UFRGSMUN? Confira aqui tudo o que
+            você precisa saber para participar da edição desse ano!
+          </p>
+          <button className="py-2 px-10 bg-almostWhite text-darkGreen rounded-full">
+            FAQ
+          </button>
+        </div>
       </div>
 
       <Footer />
