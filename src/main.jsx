@@ -9,6 +9,7 @@ import Committee from "./routes/Committee";
 import Apply from "./routes/Apply";
 
 import "./main.css";
+import Enomum from "./routes/Enomum";
 
 const router = createBrowserRouter([
   {
@@ -29,8 +30,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/apply",
-    element: <Apply />
-  }
+    element: <Apply />,
+  },
+  {
+    path: "/enomum",
+    element: <Enomum />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
