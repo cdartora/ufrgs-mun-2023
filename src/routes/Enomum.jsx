@@ -5,6 +5,7 @@ import anniversaryLogo from "../assets/apply/20-anos.svg";
 import divider from "../assets/about/divider.svg";
 import dividerInverted from "../assets/about/divider-inverted.svg";
 import earth from "../assets/about/earth.svg";
+import calendar from "../assets/enomum/calendar.svg";
 
 function Enomum() {
   return (
@@ -73,6 +74,57 @@ function Enomum() {
         <img
           src={divider}
           className="absolute w-full h-12 md:h-16 lg:h-20 top-0 z-30"
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
+        <div className="max-w-screen-md p-8 text-lightTone mx-auto z-20">
+          <h4 className="font-black text-lg mb-2">Mesas de discussão</h4>
+          <div className="flex flex-col gap-1 justify-center w-full">
+            <p className="font-light">Mesa 1: Federação Brasileira de Modelos das Nações Unidas (SGs)</p>
+            <p className="font-light">Mesa 2: Regras de Procedimento</p>
+            <p className="font-light">Mesa 3: Integração entre Modelos</p>
+            <p className="font-light">Mesa 4: Democratização e Diversidade</p>
+            <p className="font-light">Mesa 5: Qualidade Acadêmica</p>
+          </div>
+          <div className="mt-6">
+            <div className="flex flex-col items-center">
+              <img src={calendar} alt="" className="w-5" />
+              <h3 className="font-black text-2xl text-lightTone">
+               Cronograma
+              </h3>
+            </div>
+            <div className="flex flex-col items-center md:flex-row justify-around mt-4">
+              <div className="flex flex-col items-center grow w-1/2 mb-4">
+                <h4 className="font-black text-lg">05 de Novembro</h4>
+                <h4 className="font-black text-lg mb-2">(Segunda-feira)</h4>
+                <div className="font-light flex flex-col items-center gap-4">
+                  <p className="md:text-center inline whitespace-nowrap md:whitespace-normal">{"10:00 > 12:00 Cerimônia de Abertura"}</p>
+                  <p className="inline whitespace-nowrap md:whitespace-normal">{"12:00 > 14:00 Almoço"}</p>
+                  <p className="inline whitespace-nowrap md:whitespace-normal">{"14:00 > 16:30 1ª Sessão"}</p>
+                  <p className="inline whitespace-nowrap md:whitespace-normal">{"16:30 > 17:00 Coffee Break"}</p>
+                  <p className="inline whitespace-nowrap md:whitespace-normal">{"17:00 > 19:00 2ª Sessão"}</p>
+                </div> 
+              </div>
+              <div className="w-[1.5px] hidden md:block bg-almostWhite"/>
+              <div className="flex flex-col items-center grow w-1/2">
+                <h4 className="font-black text-lg">06 de Novembro</h4>
+                <h4 className="font-black text-lg mb-2">(Terça-feira)</h4>
+                <div className="font-light flex flex-col items-center gap-4">
+                  <p className="inline whitespace-nowrap md:whitespace-normal">{"09:30 > 10:00 3ª Sessão"}</p>
+                  <p className="inline whitespace-nowrap md:whitespace-normal">{"10:00 > 12:00 Almoço"}</p>
+                  <p className="inline whitespace-nowrap md:whitespace-normal">{"12:00 > 14:00 4ª Sessão"}</p>
+                  <p className="inline whitespace-nowrap md:whitespace-normal">{"14:00 > 16:30 Coffee Break"}</p>
+                  <p className="inline whitespace-nowrap md:whitespace-normal">{"16:30 > 17:00 5ª Sessão"}</p>
+                  <p className="md:text-center inline whitespace-nowrap md:whitespace-normal">{"17:00 > 19:00 Cerimônia de Encerramento"}</p>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src={dividerInverted}
+          className="absolute w-full h-12 md:h-16 lg:h-20 bottom-0 z-20"
           draggable="false"
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
