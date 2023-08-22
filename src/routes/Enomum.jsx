@@ -131,6 +131,41 @@ function Enomum() {
         />
       </div>
 
+        <div>
+        <div className="max-w-screen-md p-8 mx-auto mb-10 flex flex-col items-center">
+              <h3 className="font-black text-2xl text-darkTone">
+                Inscrições
+              </h3>
+              <div className="flex items-center gap-2 my-4">
+                <div className="bg-darkTone h-2 w-2 rounded-full" />
+                <div className="bg-darkTone h-2 w-2 rounded-full" />
+                <div className="bg-darkTone h-2 w-2 rounded-full" />
+              </div>
+              <p className="text-darkTone font-light relative text-base">
+                Participantes inscritos no UFRGSMUN terão isenção da taxa de inscrição. 
+              </p>
+              <div className="flex items-center gap-2 my-4">
+                <div className="bg-darkTone h-2 w-2 rounded-full" />
+                <div className="bg-darkTone h-2 w-2 rounded-full" />
+                <div className="bg-darkTone h-2 w-2 rounded-full" />
+              </div>
+              <p className="text-darkTone font-light relative text-base">
+                Para os demais participantes o preço individual será de R$50,00. Para delegações compostas por 5 pessoas, o valor individual será de R$40,00.
+              </p>
+              <div className="flex items-center gap-2 my-4">
+                <div className="bg-darkTone h-2 w-2 rounded-full" />
+                <div className="bg-darkTone h-2 w-2 rounded-full" />
+                <div className="bg-darkTone h-2 w-2 rounded-full" />
+              </div>
+              <p className="text-darkTone font-light relative text-base">
+                Cada simulação pode inscrever no máximo 5 representantes, um para cada mesa de discussão.
+              </p>
+              <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap mt-4">
+                Inscrição
+              </button>
+        </div>
+      </div>
+
       <Footer />
     </main>
   );
