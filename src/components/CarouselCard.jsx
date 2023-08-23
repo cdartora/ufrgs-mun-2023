@@ -1,5 +1,3 @@
-import React from "react";
-
 function CarouselCard({ cardData }) {
   const { month, day, name } = cardData;
   return (
