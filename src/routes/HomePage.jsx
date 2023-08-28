@@ -1,21 +1,16 @@
-import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
+import PageContainer from "../components/PageContainer";
 import VideosSection from "../components/VideosSection";
 import DeadlinesSection from "../components/DeadlinesSection";
-import Footer from "../components/Footer";
 
-export default function Root() {
+export default function HomePage() {
   return (
-    <main className="App">
-      <header>
-        <NavBar />
-        <HeroSection />
-      </header>
+    <PageContainer>
+      <HeroSection />
       <section className="relative">
         <VideosSection />
       </section>
       <DeadlinesSection />
-      <Footer />
-    </main>
+    </PageContainer>
   );
 }
