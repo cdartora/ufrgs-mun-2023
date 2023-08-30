@@ -3,7 +3,7 @@ import { Paragraph, Subtitle } from "./Formatting";
 
 function Motto() {
   return (
-    <div className="mb-20 text-lightTone">
+    <div className="text-lightTone">
       <h4 className="italic font-medium text-lg">Motto</h4>
       <div className="mb-2 leading-5">
         <Subtitle>Desafiando limites</Subtitle>
