@@ -7,7 +7,7 @@ module.exports = {
         lg: "1080px",
       },
       colors: {
-        darkGreen: "#1E2F23",
+        darkGreen: "#253A2B",
         lightGreen: "#868E77",
         lightTone: "#D3D6C6",
         darkTone: "#3D3D3D",

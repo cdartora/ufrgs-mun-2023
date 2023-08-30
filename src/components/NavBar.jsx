@@ -43,18 +43,13 @@ export default function NavBar() {
                 closeMenu={toggleMenu}
                 href="/about"
               />
-              <MenuItem
-                label="Parceiros"
-                mobile={true}
-                closeMenu={toggleMenu}
-                href="/partners"
-              />
-              <MenuItem
-                label="Conferência"
-                mobile={true}
-                closeMenu={toggleMenu}
-                href="/conference"
-              />
+                <MenuItem
+                  label="Conferência"
+                  mobile={true}
+                  closeMenu={toggleMenu}
+                  href="/conference"
+                />
+
               <MenuItem
                 label="Comitês"
                 mobile={true}
@@ -79,6 +74,12 @@ export default function NavBar() {
                 mobile={true}
                 closeMenu={toggleMenu}
               />
+              <MenuItem
+                label="Parceiros"
+                mobile={true}
+                closeMenu={toggleMenu}
+                href="/partners"
+              />
             </div>
           </>
         ) : (
@@ -94,12 +95,12 @@ export default function NavBar() {
       <div className="hidden lg:flex flex-1 items-center justify-end">
         <MenuItem label="Início" href="/" />
         <MenuItem label="Sobre nós" href="/about" />
-        <MenuItem label="Parceiros" href="/partners" />
         <MenuItem label="Conferência" href="/conference" />
         <MenuItem label="Comitês" href="/committees" />
         <MenuItem label="Inscrições" href="/apply" />
         <MenuItem label="Preparação" href="/prepare" />
         <MenuItem label="Enomum" href="/enomum" />
+        <MenuItem label="Parceiros" href="/partners" />
       </div>
     </nav>
   );

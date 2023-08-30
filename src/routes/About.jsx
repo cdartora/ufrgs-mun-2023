@@ -3,11 +3,9 @@ import Footer from "../components/Footer";
 import TeamSection from "../components/TeamSection";
 import TimelineCarousel from "../components/TimelineCarousel";
 
-import anniversaryLogo from "../assets/about/20-anos.svg";
-import divider from "../assets/about/divider.svg"
-import dividerInverted from "../assets/about/divider-inverted.svg";
-import wave from "../assets/about/wave.svg";
-// import wave2 from "../assets/about/wave-2.svg";
+import anniversaryLogo from "../assets/20-anos-white.svg";
+import divider from "../assets/divider-green.svg"
+import dividerInverted from "../assets/divider-inverted-green.svg";
 import dialog from "../assets/about/dialog.svg";
 
 import earth from "../assets/about/earth.svg";
@@ -15,7 +13,7 @@ import earth from "../assets/about/earth.svg";
 export default function About() {
   return (
     <main className="App">
-      <header className="relative pb-10">
+      <header className="relative pb-10 bg-darkGreen text-almostWhite">
         <NavBar />
         <div>
           <div className="max-w-screen-md p-8 mx-auto ">
@@ -25,12 +23,12 @@ export default function About() {
                 alt="Logo de aniversários dos 20 anos de UFRGSMUN"
                 className="w-7 z-20"
               />
-              <h3 className="font-black text-2xl text-darkTone z-20">Sobre</h3>
+              <h3 className="font-black text-2xl z-20">Sobre</h3>
             </div>
-            <h4 className="font-black text-lg mb-4 relative z-20 text-darkTone">
+            <h4 className="font-black text-lg mb-4 relative z-20">
               O que é um modelo da ONU?
             </h4>
-            <p className="text-darkTone font-light relative z-20">
+            <p className="font-light relative z-20">
               Um “Modelo das Nações Unidas” é uma conferência que proporciona
               aos seus participantes uma simulação sobre temas importantes da
               agenda internacional, de acordo com as regras de procedimento das
@@ -45,25 +43,18 @@ export default function About() {
               ocorrem nos comitês dos órgãos da ONU.
             </p>
           </div>
-          <img
+          {/* <img
             src={earth}
             className="absolute z-10 right-0 top-0 w-52"
             draggable="false"
             style={{ userSelect: "none" }}
             onMouseDown={() => false}
-          />
+          /> */}
         </div>
       </header>
 
-      <div className="bg-brand-dark relative py-20">
-        <img
-          src={divider}
-          className="absolute w-full h-12 md:h-16 lg:h-20 top-0 z-30"
-          draggable="false"
-          style={{ userSelect: "none" }}
-          onMouseDown={() => false}
-        />
-        <div className="max-w-screen-md p-8 text-right text-lightTone mx-auto">
+      <div className="relative py-20 text-darkTone">
+        <div className="max-w-screen-md p-8 text-right mx-auto">
           <h4 className="font-black text-lg mb-4">E o UFRGSMUN?</h4>
           <p className="font-light">
             Um “Modelo das Nações Unidas” é uma conferência que proporciona aos
@@ -80,24 +71,7 @@ export default function About() {
             órgãos da ONU.
           </p>
         </div>
-        <img
-          src={wave}
-          alt=""
-          className="z-10 absolute top-0 right-0 opacity-20 h-full"
-          draggable="false"
-          style={{ userSelect: "none" }}
-          onMouseDown={() => false}
-        />
-        <img
-          src={dividerInverted}
-          className="absolute w-full h-12 md:h-16 lg:h-20 bottom-0 z-20"
-          draggable="false"
-          style={{ userSelect: "none" }}
-          onMouseDown={() => false}
-        />
-      </div>
 
-      <div className="bg-white mb-6 relative pt-10 text-darkTone">
         <div className="max-w-screen-md text-center py-8 mx-auto">
           <h4 className="font-extrabold text-lg mb-2">Nossa História</h4>
           <p className="font-light">
@@ -105,10 +79,11 @@ export default function About() {
           </p>
           <TimelineCarousel />
         </div>
+
       </div>
 
       <div className="bg-brand-dark relative flex justify-center">
-        <div className="bg-lightGray rounded-full py-2 px-6 font-black text-lg text-almostWhite absolute shadow-md -top-[26px]">
+        <div className="bg-lightGray rounded-full py-2 px-6 font-black text-lg text-almostWhite absolute shadow-md -top-[22px]">
           Equipe
         </div>
         <div className="max-w-screen-md flex flex-col items-center">
