@@ -7,9 +7,7 @@ export default function HomePage() {
   return (
     <PageContainer>
       <HeroSection />
-      <section className="relative">
-        <VideosSection />
-      </section>
+      <VideosSection />
       <DeadlinesSection />
     </PageContainer>
   );
