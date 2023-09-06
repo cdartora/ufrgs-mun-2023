@@ -2,13 +2,10 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import TeamSection from "../components/TeamSection";
 import TimelineCarousel from "../components/TimelineCarousel";
+import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
-import divider from "../assets/divider-green.svg"
-import dividerInverted from "../assets/divider-inverted-green.svg";
 import dialog from "../assets/about/dialog.svg";
-
-import earth from "../assets/about/earth.svg";
 
 export default function About() {
   return (
@@ -23,12 +20,10 @@ export default function About() {
                 alt="Logo de aniversários dos 20 anos de UFRGSMUN"
                 className="w-7 z-20"
               />
-              <h3 className="font-black text-2xl z-20">Sobre</h3>
+              <Title>Sobre</Title>
             </div>
-            <h4 className="font-black text-lg mb-4 relative z-20">
-              O que é um modelo da ONU?
-            </h4>
-            <p className="font-light relative z-20">
+            <Subtitle className="mb-4">O que é um modelo da ONU?</Subtitle>
+            <Paragraph>
               Um “Modelo das Nações Unidas” é uma conferência que proporciona
               aos seus participantes uma simulação sobre temas importantes da
               agenda internacional, de acordo com as regras de procedimento das
@@ -41,15 +36,8 @@ export default function About() {
               Chefes de Estado, Ministros, juízes ou mesmo como jornalistas no
               comitê de imprensa internacional, cobrindo as discussões que
               ocorrem nos comitês dos órgãos da ONU.
-            </p>
+            </Paragraph>
           </div>
-          {/* <img
-            src={earth}
-            className="absolute z-10 right-0 top-0 w-52"
-            draggable="false"
-            style={{ userSelect: "none" }}
-            onMouseDown={() => false}
-          /> */}
         </div>
       </header>
 
@@ -79,7 +67,6 @@ export default function About() {
           </p>
           <TimelineCarousel />
         </div>
-
       </div>
 
       <div className="bg-brand-dark relative flex justify-center">

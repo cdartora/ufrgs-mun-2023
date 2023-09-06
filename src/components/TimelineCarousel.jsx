@@ -1,4 +1,5 @@
 import TimelineCard from "./TimelineCard";
+
 import timeline from "../data/timeline";
 
 function TimelineCarousel() {
@@ -8,7 +9,9 @@ function TimelineCarousel() {
         {timeline.map((cardData, index) => (
           <TimelineCard cardData={cardData} key={index} />
         ))}
-        <div className="h-1 bg-brand-dark absolute z-10 w-[1160px] top-[50%] translate-y-[-50%] " />
+        <div
+          className={`h-1 bg-brand-dark absolute z-10 w-[1500px] top-[50%] translate-y-[-50%]`}
+        />
       </div>
     </>
   );
