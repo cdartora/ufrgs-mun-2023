@@ -1,6 +1,6 @@
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import SocialEventsTabs from "../components/SocialEventsTabs";
+import PageContainer from "../components/PageContainer";
+import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
@@ -11,51 +11,49 @@ import wave from "../assets/about/wave.svg";
 
 function Conference() {
   return (
-    <main>
-      <header className="text-lightTone relative">
-        <NavBar />
-        <div className="bg-darkGreen">
-          <div className="max-w-screen-md p-8 mx-auto ">
-            <div className="flex flex-col items-center mb-6">
-              <img
-                src={anniversaryLogo}
-                alt="Logo de aniversários dos 20 anos de UFRGSMUN"
-                className="w-7 z-20"
-              />
-              <h3 className="font-black text-2xl z-20">Conferência</h3>
-            </div>
-            <h4 className="font-black text-lg relative z-20">Local</h4>
-            <h5 className="font-light italic mb-4">
-              Hotel Plaza São Rafael - Av. Alberto Bins, 514
-            </h5>
-            <p className="font-light relative z-20">
-              O UFRGSMUN acontecerá mais uma vez no Plaza São Rafael Hotel. É um
-              dos hotéis mais conceituados de Porto Alegre, devido aos seus
-              serviços de alta qualidade e diversidade de quartos para eventos,
-              como exposições, congressos e casamentos. Por isso oferece um
-              ambiente adequado para hospedar o UFRGSMUN. O Plaza São Rafael
-              está bem localizado no centro de Porto Alegre, estando a 20
-              minutos do Aeroporto Internacional Salgado Filho e a 5 minutos da
-              rodoviária. Está próximo a áreas comerciais, shopping centers e
-              restaurantes, a uma curta distância dos centros financeiro e
-              administrativo da cidade e do Estado, da Universidade Federal do
-              Rio Grande do Sul (UFRGS) e de muitos dos mais famosos pontos
-              turísticos da cidade. A localização do hotel permitirá que os
-              participantes explorem Porto Alegre e descubram o que ela tem de
-              melhor. Além disso, por estar no coração do centro da cidade, o
-              Plaza São Rafael também é conveniente para os delegados que
-              residem em Porto Alegre.
-            </p>
+    <PageContainer>
+      <div className="bg-darkGreen text-almostWhite relative">
+        <SectionContainer>
+          <div className="flex flex-col items-center mb-6">
+            <img
+              src={anniversaryLogo}
+              alt="Logo de aniversários dos 20 anos de UFRGSMUN"
+              className="w-7 z-20"
+            />
+            <Title>Conferência</Title>
           </div>
-          <img
-            src={earth}
-            className="absolute z-10 left-0 top-0 w-52 opacity-10"
-            draggable="false"
-            style={{ userSelect: "none" }}
-            onMouseDown={() => false}
-          />
-        </div>
-      </header>
+          <Subtitle className="font-black text-lg relative z-20">
+            Local
+          </Subtitle>
+          <Paragraph className="italic mb-4">
+            Hotel Plaza São Rafael - Av. Alberto Bins, 514
+          </Paragraph>
+          <Paragraph>
+            O UFRGSMUN acontecerá mais uma vez no Plaza São Rafael Hotel. É um
+            dos hotéis mais conceituados de Porto Alegre, devido aos seus
+            serviços de alta qualidade e diversidade de quartos para eventos,
+            como exposições, congressos e casamentos. Por isso oferece um
+            ambiente adequado para hospedar o UFRGSMUN. O Plaza São Rafael está
+            bem localizado no centro de Porto Alegre, estando a 20 minutos do
+            Aeroporto Internacional Salgado Filho e a 5 minutos da rodoviária.
+            Está próximo a áreas comerciais, shopping centers e restaurantes, a
+            uma curta distância dos centros financeiro e administrativo da
+            cidade e do Estado, da Universidade Federal do Rio Grande do Sul
+            (UFRGS) e de muitos dos mais famosos pontos turísticos da cidade. A
+            localização do hotel permitirá que os participantes explorem Porto
+            Alegre e descubram o que ela tem de melhor. Além disso, por estar no
+            coração do centro da cidade, o Plaza São Rafael também é conveniente
+            para os delegados que residem em Porto Alegre.
+          </Paragraph>
+        </SectionContainer>
+        <img
+          src={earth}
+          className="absolute z-10 left-0 top-0 w-52 opacity-10"
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
+      </div>
 
       <div className="bg-white relative py-20">
         <img
@@ -123,9 +121,7 @@ function Conference() {
           <SocialEventsTabs />
         </div>
       </div>
-
-      <Footer />
-    </main>
+    </PageContainer>
   );
 }
 

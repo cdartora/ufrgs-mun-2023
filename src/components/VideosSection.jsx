@@ -2,7 +2,7 @@ import { Title } from "./Formatting";
 import SectionContainer from "./SectionContainer";
 
 import earth from "../assets/home/videos/earth.svg";
-import divider from "../assets/divider-green-inverted.png";
+import divider from "../assets/divider-inverted-green.svg";
 
 function VideosSection() {
   return (
@@ -46,7 +46,7 @@ function VideosSection() {
         </SectionContainer>
         <img
           src={divider}
-          className="absolute w-full h-12 md:h-16 lg:h-20 bottom-0 z-30"
+          className="absolute w-full bottom-0 z-30"
           draggable="false"
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
