@@ -46,7 +46,7 @@ const steps = [
 
 function ApplyTabs() {
   return (
-    <div className="w-full flex flex-col items-center justify-center max-w-md md:px-2 py-6 md:py-16 sm:px-0">
+    <div className="w-full flex flex-col items-center justify-center max-w-md md:px-2 py-6 sm:px-0">
       <Tab.Group>
         <Tab.List className="flex items-center">
           <div className="z-20 flex justify-center items-center">

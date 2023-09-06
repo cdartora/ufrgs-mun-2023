@@ -10,7 +10,7 @@ export default function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <nav className="flex sticky top-0 left-0 w-full z-40 bg-brand-dark gradient shadow-xl text-lightTone">
+    <nav className="flex sticky top-0 left-0 w-full z-40 bg-brand-dark gradient shadow-xl text-almostWhite">
       <div className="flex items-center p-4">
         <img src={navLogo} alt="all white logo" width="140" />
       </div>
@@ -43,12 +43,12 @@ export default function NavBar() {
                 closeMenu={toggleMenu}
                 href="/about"
               />
-                <MenuItem
-                  label="Conferência"
-                  mobile={true}
-                  closeMenu={toggleMenu}
-                  href="/conference"
-                />
+              <MenuItem
+                label="Conferência"
+                mobile={true}
+                closeMenu={toggleMenu}
+                href="/conference"
+              />
 
               <MenuItem
                 label="Comitês"
@@ -67,12 +67,6 @@ export default function NavBar() {
                 mobile={true}
                 closeMenu={toggleMenu}
                 href="/prepare"
-              />
-              <MenuItem
-                label="Enomum"
-                href="/enomum"
-                mobile={true}
-                closeMenu={toggleMenu}
               />
               <MenuItem
                 label="Parceiros"
@@ -99,7 +93,6 @@ export default function NavBar() {
         <MenuItem label="Comitês" href="/committees" />
         <MenuItem label="Inscrições" href="/apply" />
         <MenuItem label="Preparação" href="/prepare" />
-        <MenuItem label="Enomum" href="/enomum" />
         <MenuItem label="Parceiros" href="/partners" />
       </div>
     </nav>

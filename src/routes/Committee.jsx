@@ -1,9 +1,10 @@
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import CommitteeCard from "../components/CommitteeCard";
+import PageContainer from "../components/PageContainer";
+import SectionContainer from "../components/SectionContainer";
+import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import earth from "../assets/committees/earth.svg";
-import anniversaryLogo from "../assets/committees/20-anos.svg";
+import anniversaryLogo from "../assets/20-anos-white.svg";
 import divider from "../assets/conference/divider.svg";
 
 import committeeImageUrl from "../assets/committees/committee-1.svg";
@@ -65,51 +66,39 @@ const committees = [
 
 function Committee() {
   return (
-    <main className="App relative">
-      <header className="text-lightTone">
-        <NavBar />
-        <div className="bg-darkGreen">
-          <div className="max-w-screen-md p-8 mx-auto">
-            <div className="flex flex-col items-center mb-6">
-              <img
-                src={anniversaryLogo}
-                alt="Logo de aniversários dos 20 anos de UFRGSMUN"
-                className="w-7 z-20"
-              />
-              <h3 className="font-black text-2xl z-20">Comitês</h3>
-            </div>
-            <h4 className="font-black text-lg mb-4 relative z-20">
-              Visão Geral
-            </h4>
-            <p className="font-light relative z-20">
-              Em 2023, nossos comitês e tópicos abarcarão órgãos oficiais das
-              Nações Unidas e cúpulas de organizações internacionais, além dos
-              nossos tradicionais Comitê de Imprensa e o Gabinete de Crises.
-              Quatro deles serão em português (CDHNU, CMDA, CSI-ORH e Imprensa)
-              e cinco deles serão em inglês (CICA-Summit, DISEC, IsDB, Legal e
-              UNSC). Enquanto que CMDA, IsDB e UNSC serão realizados em dupla,
-              os outros serão individuais.
-            </p>
+    <PageContainer>
+      <div className="bg-darkGreen text-almostWhite">
+        <SectionContainer>
+          <div className="flex flex-col items-center mb-6">
+            <img
+              src={anniversaryLogo}
+              alt="Logo de aniversários dos 20 anos de UFRGSMUN"
+              className="w-7 z-20"
+            />
+            <Title>Comitês</Title>
           </div>
-          <img
-            src={earth}
-            className="absolute z-10 right-0 top-0 w-52 opacity-10"
-            draggable="false"
-            style={{ userSelect: "none" }}
-            onMouseDown={() => false}
-          />
-        </div>
-      </header>
-
-      <div className="bg-white relative py-20">
+          <Subtitle>Visão Geral</Subtitle>
+          <Paragraph>
+            Em 2023, nossos comitês e tópicos abarcarão órgãos oficiais das
+            Nações Unidas e cúpulas de organizações internacionais, além dos
+            nossos tradicionais Comitê de Imprensa e o Gabinete de Crises.
+            Quatro deles serão em português (CDHNU, CMDA, CSI-ORH e Imprensa) e
+            cinco deles serão em inglês (CICA-Summit, DISEC, IsDB, Legal e
+            UNSC). Enquanto que CMDA, IsDB e UNSC serão realizados em dupla, os
+            outros serão individuais.
+          </Paragraph>
+        </SectionContainer>
         <img
-          src={divider}
-          className="absolute w-full h-12 md:h-16 lg:h-20 top-0 z-30"
+          src={earth}
+          className="absolute z-10 right-0 top-0 w-52 opacity-10"
           draggable="false"
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
         />
-        <div className="max-w-screen-md p-8 mx-auto">
+      </div>
+
+      <div className="relative text-darkTone">
+        <SectionContainer>
           {committees.map((committee, idx) => {
             const isOdd = idx % 2 == 0;
 
@@ -117,11 +106,9 @@ function Committee() {
               <CommitteeCard key={idx} committee={committee} isOdd={isOdd} />
             );
           })}
-        </div>
+        </SectionContainer>
       </div>
-
-      <Footer />
-    </main>
+    </PageContainer>
   );
 }
 

@@ -8,7 +8,7 @@ import wave from "../assets/wave.svg";
 export default function HeroSection() {
   return (
     <div
-      className="bg-darkGreen relative bg-cover bg-no-repeat"
+      className="bg-darkGreen text-almostWhite relative bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${wave})` }}
     >
       <SectionContainer className="pb-40">

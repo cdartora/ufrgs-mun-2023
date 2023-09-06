@@ -9,7 +9,6 @@ import Committee from "./routes/Committee";
 import Apply from "./routes/Apply";
 import Partners from "./routes/Partners";
 import Prepare from "./routes/Prepare";
-import Enomum from "./routes/Enomum";
 
 import "./main.css";
 
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
   {
     path: "/apply",
     element: <Apply />,
-  },
-  {
-    path: "/enomum",
-    element: <Enomum />,
   },
   {
     path: "/partners",
