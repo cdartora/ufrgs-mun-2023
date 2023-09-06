@@ -1,8 +1,9 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import SocialEventsTabs from "../components/SocialEventsTabs";
+import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
-import anniversaryLogo from "../assets/conference/20-anos.svg";
+import anniversaryLogo from "../assets/20-anos-white.svg";
 import earth from "../assets/conference/earth.svg";
 import divider from "../assets/conference/divider.svg";
 import dividerInverted from "../assets/conference/divider-inverted.svg";
