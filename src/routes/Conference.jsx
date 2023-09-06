@@ -55,17 +55,10 @@ function Conference() {
         />
       </div>
 
-      <div className="bg-white relative py-20">
-        <img
-          src={divider}
-          className="absolute w-full h-12 md:h-16 lg:h-20 top-0 z-30"
-          draggable="false"
-          style={{ userSelect: "none" }}
-          onMouseDown={() => false}
-        />
-        <div className="max-w-screen-md p-8 text-right text-darkTone mx-auto">
-          <h4 className="font-black text-lg mb-4">Acomodação</h4>
-          <p className="font-light">
+      <div className="relative text-darkTone">
+        <SectionContainer className="text-right">
+          <Subtitle className="mb-4">Acomodação</Subtitle>
+          <Paragraph>
             O UFRGS Model United Nations, projeto idealizado e criado por alunos
             da Universidade Federal do Rio Grande do Sul (UFRGS), foi a primeira
             conferência MUN a surgir no Sul do Brasil. Ao longo de seus vinte
@@ -81,8 +74,8 @@ function Conference() {
             formação pessoal e acadêmica. Em todas as suas edições, a UFRGSMUN
             espera possibilitar uma intensa troca de saberes, experiências e
             memórias aos que constroem e participam do evento.
-          </p>
-        </div>
+          </Paragraph>
+        </SectionContainer>
         <img
           src={wave}
           alt=""
@@ -91,35 +84,26 @@ function Conference() {
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
         />
-        <img
-          src={dividerInverted}
-          className="absolute w-full h-12 md:h-16 lg:h-20 bottom-0 z-20"
-          draggable="false"
-          style={{ userSelect: "none" }}
-          onMouseDown={() => false}
-        />
       </div>
 
-      <div className="bg-darkGreen mb-6 relative">
-        <div className="max-w-screen-md p-8 mx-auto flex flex-col items-center">
-          <h4 className="font-black text-lg text-center text-lightTone mb-2">
-            Eventos Sociais
-          </h4>
-          <p className="text-lightTone font-light mb-2">
+      <div className="bg-darkGreen text-almostWhite relative">
+        <SectionContainer className="flex flex-col items-center">
+          <Subtitle className="text-center mb-2">Eventos Sociais</Subtitle>
+          <Paragraph className="mb-2">
             Debater e simular o dia todo pode ser desgastante, sabemos disso.
             Que melhor maneira de recarregar suas energias do que curtir uma
             noite ao lado de amigos depois de um dia de trabalho duro?
-          </p>
-          <p className="text-lightTone font-light">
+          </Paragraph>
+          <Paragraph>
             Nossos eventos sociais proporcionam a você a chance de relaxar,
             fugir do comum, se divertir e aproveitar ao máximo a sua experiência
             no UFRGSMUN. O nosso pacote social, o qual inclui a Festa Open Bar à
             Fantasia e a Copa do Mundo/Churrasco, custa R$70 para os
             participantes que comprarem antecipadamente e R$80 durante os dias
             do evento na Help Desk.
-          </p>
+          </Paragraph>
           <SocialEventsTabs />
-        </div>
+        </SectionContainer>
       </div>
     </PageContainer>
   );
