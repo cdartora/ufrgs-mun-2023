@@ -25,10 +25,6 @@ function CommitteeCard({ committee, isOdd }) {
       </div>
       <div>
         <p className="font-light  text-darkTone text-justify">{summary}</p>
-        <div className="flex items-center justify-center gap-3 mt-4">
-          <TopicButton data={topicA} title="Tópico A" imgUrl={imgUrl} />
-          <TopicButton data={topicB} title="Tópico B" imgUrl={imgUrl} />
-        </div>
       </div>
     </div>
   );

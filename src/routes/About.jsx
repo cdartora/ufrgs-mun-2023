@@ -6,12 +6,13 @@ import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import dialog from "../assets/about/dialog.svg";
+import divider from "../assets/divider-white-inverted.png";
 
 export default function About() {
   return (
     <PageContainer>
       <div className="relative bg-darkGreen text-almostWhite">
-        <SectionContainer>
+        <SectionContainer className="pb-40">
           <div className="flex flex-col items-center mb-6">
             <img
               src={anniversaryLogo}
@@ -36,6 +37,13 @@ export default function About() {
             órgãos da ONU.
           </Paragraph>
         </SectionContainer>
+        <img
+          src={divider}
+          className="absolute w-full h-auto bottom-0 "
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
       </div>
 
       <div className="relative text-darkTone">
@@ -66,7 +74,7 @@ export default function About() {
         </SectionContainer>
       </div>
 
-      <div className="bg-brand-dark relative flex justify-center">
+      <div className="bg-darkGreen relative flex justify-center">
         <div className="bg-lightGray rounded-full py-2 px-6 font-black text-lg text-almostWhite absolute shadow-md -top-[27.5px]">
           Equipe
         </div>

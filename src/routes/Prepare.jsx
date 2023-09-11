@@ -18,11 +18,8 @@ function Prepare() {
             />
             <Title>Preparação</Title>
           </div>
-          <Subtitle>Preparação</Subtitle>
-          <Paragraph className="mb-4">
-            Prepare para o UFRGSMUN desse ano
-          </Paragraph>
-          <div className="flex justify-center gap-4 text-sm md:flex-row flex-col w-full mb-4">
+          <Subtitle className="mb-4">Prepare-se para o UFRGSMUN</Subtitle>
+          <div className="flex justify-center gap-4 text-sm md:flex-row flex-col w-full mb-10">
             <button className="rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap">
               Guia de estudos
             </button>

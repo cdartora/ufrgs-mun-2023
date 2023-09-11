@@ -3,7 +3,7 @@ import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
 import ApplyTabs from "../components/ApplyTabs";
 
-import anniversaryLogo from "../assets/20-anos-green.svg";
+import anniversaryLogo from "../assets/20-anos-white.svg";
 import earth from "../assets/about/earth.svg";
 import notice from "../assets/apply/notice.svg";
 import form from "../assets/apply/form.svg";
@@ -11,7 +11,7 @@ import form from "../assets/apply/form.svg";
 export default function Apply() {
   return (
     <PageContainer>
-      <div className="relative text-darkTone">
+      <div className="relative text-almostWhite bg-darkGreen">
         <SectionContainer>
           <div className="flex flex-col items-center mb-6">
             <img
@@ -19,28 +19,16 @@ export default function Apply() {
               alt="Logo de aniversários dos 20 anos de UFRGSMUN"
               className="w-7 z-20"
             />
-            <Title className="text-title">Inscrições</Title>
+            <Title>Inscrições</Title>
           </div>
           <Subtitle className="mb-4">Visão Geral</Subtitle>
-          <Paragraph>
+          <Paragraph className="mb-10">
             Inscrever-se no UFRGSMUN 2023 é bastante fácil! Aqui, você
             encontrará alguns passos para seguir, além da nossa matriz de
             países, dos formulários de inscrição e das Perguntas Frequentes.
             Atenção: as inscrições se encerram no dia 16 de setembro ou até
             acabarem as vagas!
           </Paragraph>
-        </SectionContainer>
-        <img
-          src={earth}
-          className="absolute z-10 right-0 top-0 w-52"
-          draggable="false"
-          style={{ userSelect: "none" }}
-          onMouseDown={() => false}
-        />
-      </div>
-
-      <div className="bg-darkGreen text-almostWhite relative">
-        <SectionContainer className="text-right mx-auto">
           <Subtitle className="text-center">Como se inscrever?</Subtitle>
           <div className="flex justify-center w-full">
             <ApplyTabs />
@@ -81,9 +69,6 @@ export default function Apply() {
                 </button>
                 <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
                   Press
-                </button>
-                <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
-                  CSI-OH
                 </button>
               </div>
             </div>

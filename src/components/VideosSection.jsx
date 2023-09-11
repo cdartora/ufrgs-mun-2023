@@ -17,13 +17,6 @@ function VideosSection() {
               allow="autoplay; encrypted-media"
               allowFullScreen=""
             ></iframe>
-            <Title className="w-full mb-2 mt-4">Mais vídeos</Title>
-            <iframe
-              className="youtube rounded-2xl shadow-xlg z-20"
-              src="https://www.youtube-nocookie.com/embed/JwkBcE0qRdM?rel=0&amp;controls=0&amp;showinfo=0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen=""
-            ></iframe>
           </div>
           <img
             src={earth}

@@ -74,14 +74,6 @@ function Conference() {
             memórias aos que constroem e participam do evento.
           </Paragraph>
         </SectionContainer>
-        <img
-          src={wave}
-          alt=""
-          className="z-10 absolute top-0 right-0 opacity-20 h-full"
-          draggable="false"
-          style={{ userSelect: "none" }}
-          onMouseDown={() => false}
-        />
       </div>
 
       <div className="bg-darkGreen text-almostWhite relative">
