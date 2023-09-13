@@ -23,12 +23,24 @@ function Prepare() {
             <button className="rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap">
               Guia de estudos
             </button>
-            <button className="rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap">
-              Guia de regras
-            </button>
-            <button className="rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap">
-              Relatório do país
-            </button>
+            <a
+              href="/documents/guia-de-regras.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap">
+                Guia de regras
+              </button>
+            </a>
+            <a
+              href="/documents/country-report.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap">
+                Relatório do país
+              </button>
+            </a>
           </div>
           <Subtitle>Política de prêmios</Subtitle>
           <Paragraph className="mb-4">
