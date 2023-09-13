@@ -1,6 +1,6 @@
 import { Tab } from "@headlessui/react";
 import classNames from "classnames";
-import polygon from "../assets/conference/polygon.svg";
+import polygon from "../../assets/polygon.svg";
 
 export default function SocialEventsTabs() {
   const schedule = [

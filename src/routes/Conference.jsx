@@ -1,10 +1,10 @@
-import SocialEventsTabs from "../components/SocialEventsTabs";
+import SocialEventsTabs from "../components/conference/SocialEventsTabs";
 import PageContainer from "../components/PageContainer";
 import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
-import earth from "../assets/conference/earth.svg";
+import earth from "../assets/green-earth.svg";
 
 function Conference() {
   return (

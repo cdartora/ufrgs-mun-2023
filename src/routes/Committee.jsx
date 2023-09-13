@@ -5,7 +5,6 @@ import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import earth from "../assets/committees/earth.svg";
 import anniversaryLogo from "../assets/20-anos-white.svg";
-import divider from "../assets/conference/divider.svg";
 
 import committeeImageUrl from "../assets/committees/committee-1.svg";
 
