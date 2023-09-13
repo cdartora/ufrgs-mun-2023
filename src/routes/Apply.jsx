@@ -2,9 +2,9 @@ import PageContainer from "../components/PageContainer";
 import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
 import ApplyTabs from "../components/ApplyTabs";
+import CountryMatrix from "../components/CountryMatrix";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
-import earth from "../assets/about/earth.svg";
 import notice from "../assets/apply/notice.svg";
 import form from "../assets/apply/form.svg";
 import FAQmodal from "../components/FAQmodal";
@@ -47,9 +47,7 @@ export default function Apply() {
               <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
                 Countries
               </button>
-              <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
-                Matriz de Países
-              </button>
+              <CountryMatrix />
             </div>
           </div>
 

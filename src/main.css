@@ -59,3 +59,15 @@ body {
   max-width: 100%;
   max-height: calc((100vw - 40px) / (16 / 9));
 }
+
+td {
+  @apply p-2 border border-gray-300;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f3f4f6; /* Odd rows */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff; /* Even rows */
+}
