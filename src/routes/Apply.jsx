@@ -7,6 +7,7 @@ import anniversaryLogo from "../assets/20-anos-white.svg";
 import earth from "../assets/about/earth.svg";
 import notice from "../assets/apply/notice.svg";
 import form from "../assets/apply/form.svg";
+import FAQmodal from "../components/FAQmodal";
 
 export default function Apply() {
   return (
@@ -107,9 +108,7 @@ export default function Apply() {
             Quer tirar dúvidas rápidas sobre o UFRGSMUN? Confira aqui tudo o que
             você precisa saber para participar da edição desse ano!
           </Paragraph>
-          <button className="py-2 px-10 bg-almostWhite text-darkGreen rounded-full">
-            FAQ
-          </button>
+          <FAQmodal />
         </SectionContainer>
       </div>
     </PageContainer>
