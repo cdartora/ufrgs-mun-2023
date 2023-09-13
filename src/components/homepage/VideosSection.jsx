@@ -1,8 +1,8 @@
-import { Title } from "./Formatting";
-import SectionContainer from "./SectionContainer";
+import { Title } from "../Formatting";
+import SectionContainer from "../SectionContainer";
 
-import earth from "../assets/home/videos/earth.svg";
-import divider from "../assets/divider-inverted-green.svg";
+import earth from "../../assets/earth.svg";
+import divider from "../../assets/divider-inverted-green.svg";
 
 function VideosSection() {
   return (

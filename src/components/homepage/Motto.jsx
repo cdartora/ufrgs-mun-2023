@@ -1,5 +1,5 @@
 import React from "react";
-import { Paragraph, Subtitle } from "./Formatting";
+import { Paragraph, Subtitle } from "../Formatting";
 
 function Motto() {
   return (

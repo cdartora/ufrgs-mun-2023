@@ -1,8 +1,8 @@
 import CarouselCard from "./CarouselCard";
-import { Title } from "./Formatting";
+import { Title } from "../Formatting";
 
-import calendar from "../assets/home/calendar.svg";
-import deadlines from "../data/deadlines";
+import calendar from "../../assets/calendar.svg";
+import deadlines from "../../data/deadlines";
 
 function DeadlinesSection() {
   return (

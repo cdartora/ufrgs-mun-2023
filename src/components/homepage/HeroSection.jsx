@@ -1,9 +1,9 @@
-import Motto from "../components/Motto.jsx";
-import SectionContainer from "./SectionContainer";
+import Motto from "./Motto.jsx";
+import SectionContainer from "../SectionContainer.jsx";
 
-import heroContent from "../assets/home/hero/content.svg";
-import divider from "../assets/divider-white-inverted.png";
-import wave from "../assets/wave.svg";
+import heroContent from "../../assets/content.svg";
+import divider from "../../assets/divider-white-inverted.png";
+import wave from "../../assets/wave.svg";
 
 export default function HeroSection() {
   return (
