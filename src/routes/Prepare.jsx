@@ -2,7 +2,6 @@ import PageContainer from "../components/PageContainer";
 import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
-import earth from "../assets/committees/earth.svg";
 import anniversaryLogo from "../assets/20-anos-white.svg";
 
 function Prepare() {

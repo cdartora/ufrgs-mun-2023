@@ -3,7 +3,6 @@ import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
 import PartnersCarousel from "../components/PartnersCarousel";
 
-import earth from "../assets/committees/earth.svg";
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import form from "../assets/apply/form.svg";
 import formWhite from "../assets/partners/form-white.svg";
