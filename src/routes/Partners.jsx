@@ -4,7 +4,7 @@ import { Title, Subtitle, Paragraph } from "../components/Formatting";
 import PartnersCarousel from "../components/PartnersCarousel";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
-import form from "../assets/apply/form.svg";
+import form from "../assets/form.svg";
 import formWhite from "../assets/partners/form-white.svg";
 
 function Partners() {

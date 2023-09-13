@@ -1,13 +1,13 @@
 import PageContainer from "../components/PageContainer";
 import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
-import ApplyTabs from "../components/ApplyTabs";
-import CountryMatrix from "../components/CountryMatrix";
+import ApplyTabs from "../components/apply/ApplyTabs";
+import CountryMatrix from "../components/apply/CountryMatrix";
+import FAQmodal from "../components/apply/FAQmodal";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
-import notice from "../assets/apply/notice.svg";
-import form from "../assets/apply/form.svg";
-import FAQmodal from "../components/FAQmodal";
+import notice from "../assets/notice.svg";
+import form from "../assets/form.svg";
 
 export default function Apply() {
   return (
