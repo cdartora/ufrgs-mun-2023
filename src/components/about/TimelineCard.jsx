@@ -1,7 +1,7 @@
 import { useState, Fragment } from "react";
 
 import { Dialog, Transition } from "@headlessui/react";
-import earth from "../assets/about/earth.svg";
+import earth from "../../assets/timeline-earth.svg";
 
 function TimelineCard({ cardData: { year, title, motto, description } }) {
   const [isOpen, setIsOpen] = useState(false);

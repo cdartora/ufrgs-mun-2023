@@ -1,8 +1,8 @@
 import { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
-import noImage from "../assets/about/no-image.jpg";
-import dialog from "../assets/about/dialog.svg";
+import noImage from "../../assets/no-image.jpg";
+import dialog from "../../assets/dialog.svg";
 
 function TeamCard({ teamMember: { image, name, description } }) {
   const [isOpen, setIsOpen] = useState(false);

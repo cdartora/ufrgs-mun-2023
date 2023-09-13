@@ -1,5 +1,5 @@
 import { Tab } from "@headlessui/react";
-import team from "../data/team";
+import team from "../../data/team";
 
 import TeamCard from "./TeamCard";
 

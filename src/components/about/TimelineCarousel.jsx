@@ -1,6 +1,6 @@
 import TimelineCard from "./TimelineCard";
 
-import timeline from "../data/timeline";
+import timeline from "../../data/timeline";
 
 function TimelineCarousel() {
   return (

@@ -5,7 +5,6 @@ import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import earth from "../assets/conference/earth.svg";
-import wave from "../assets/about/wave.svg";
 
 function Conference() {
   return (

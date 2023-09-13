@@ -1,11 +1,11 @@
-import TeamSection from "../components/TeamSection";
+import TeamSection from "../components/about/TeamSection";
 import PageContainer from "../components/PageContainer";
-import TimelineCarousel from "../components/TimelineCarousel";
+import TimelineCarousel from "../components/about/TimelineCarousel";
 import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
-import dialog from "../assets/about/dialog.svg";
+import dialog from "../assets/dialog.svg";
 import divider from "../assets/divider-white-inverted.png";
 
 export default function About() {
