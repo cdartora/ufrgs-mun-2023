@@ -3,7 +3,7 @@ import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
 import ApplyTabs from "../components/apply/ApplyTabs";
 import CountryMatrix from "../components/apply/CountryMatrix";
-import FAQmodal from "../components/apply/FAQmodal";
+import FAQ from "../components/apply/FAQ";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import notice from "../assets/notice.svg";
@@ -106,7 +106,7 @@ export default function Apply() {
             Quer tirar dúvidas rápidas sobre o UFRGSMUN? Confira aqui tudo o que
             você precisa saber para participar da edição desse ano!
           </Paragraph>
-          <FAQmodal />
+          <FAQ />
         </SectionContainer>
       </div>
     </PageContainer>
