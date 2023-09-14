@@ -2,13 +2,13 @@ import { Title } from "../Formatting";
 import SectionContainer from "../SectionContainer";
 
 import earth from "../../assets/earth.svg";
-import divider from "../../assets/divider-inverted-green.svg";
+import divider from "../../assets/divider-green-inverted.svg";
 
 function VideosSection() {
   return (
     <>
       <div className="relative text-darkTone">
-        <SectionContainer className="pt-2 pb-40">
+        <SectionContainer className="lg:pt-0 pb-40">
           <div className="flex flex-col items-center justify-center">
             <Title className="w-full mb-2">Teaser</Title>
             <iframe

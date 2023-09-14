@@ -6,13 +6,13 @@ import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import dialog from "../assets/dialog.svg";
-import divider from "../assets/divider-white-inverted.png";
+import divider from "../assets/divider-white-inverted.svg";
 
 export default function About() {
   return (
     <PageContainer>
       <div className="relative bg-darkGreen text-almostWhite">
-        <SectionContainer className="pb-40">
+        <SectionContainer className="lg:pb-40">
           <div className="flex flex-col items-center mb-6">
             <img
               src={anniversaryLogo}
@@ -47,7 +47,7 @@ export default function About() {
       </div>
 
       <div className="relative text-darkTone">
-        <SectionContainer className="text-right">
+        <SectionContainer className="text-right lg:pt-0">
           <Subtitle className="mb-4">E o UFRGSMUN?</Subtitle>
           <Paragraph>
             Um “Modelo das Nações Unidas” é uma conferência que proporciona aos

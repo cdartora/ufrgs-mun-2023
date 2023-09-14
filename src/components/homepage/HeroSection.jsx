@@ -2,7 +2,7 @@ import Motto from "./Motto.jsx";
 import SectionContainer from "../SectionContainer.jsx";
 
 import heroContent from "../../assets/content.svg";
-import divider from "../../assets/divider-white-inverted.png";
+import divider from "../../assets/divider-white-inverted.svg";
 import wave from "../../assets/wave.svg";
 
 export default function HeroSection() {
@@ -11,7 +11,7 @@ export default function HeroSection() {
       className="bg-darkGreen text-almostWhite relative bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${wave})` }}
     >
-      <SectionContainer className="pb-40">
+      <SectionContainer className="lg:pb-40">
         <div className="mt-4 mb-2 z-30 w-full flex justify-center">
           <img
             src={heroContent}
@@ -26,7 +26,7 @@ export default function HeroSection() {
       </SectionContainer>
       <img
         src={divider}
-        className="absolute w-full h-auto bottom-0 "
+        className="absolute w-full h-auto bottom-0 transform rotate-x-180 transform-origin-center"
         draggable="false"
         style={{ userSelect: "none" }}
         onMouseDown={() => false}

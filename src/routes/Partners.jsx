@@ -6,13 +6,15 @@ import PartnersCarousel from "../components/partners/PartnersCarousel";
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import form from "../assets/form.svg";
 import formWhite from "../assets/form-white.svg";
-import earth from "../assets/right-green-earth.svg"
+import earth from "../assets/right-green-earth.svg";
+import dividerWhite from "../assets/divider-white-inverted.svg";
+import dividerGreen from "../assets/divider-green-inverted.svg";
 
 function Partners() {
   return (
     <PageContainer>
-      <div className="bg-darkGreen text-almostWhite">
-        <SectionContainer>
+      <div className="bg-darkGreen text-almostWhite relative">
+        <SectionContainer className="lg:pb-40">
           <div className="flex flex-col items-center mb-6">
             <img
               src={anniversaryLogo}
@@ -35,10 +37,17 @@ function Partners() {
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
         />
+        <img
+          src={dividerWhite}
+          className="absolute w-full h-auto bottom-0 "
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
       </div>
 
-      <div className="text-darkTone">
-        <SectionContainer>
+      <div className="text-darkTone relative">
+        <SectionContainer className="lg:pt-0 lg:pb-40">
           <div className="py-2 px-10 bg-darkGreen text-almostWhite font-black rounded-full text-center">
             Patrocinadores
           </div>
@@ -88,10 +97,17 @@ function Partners() {
             </div>
           </div>
         </SectionContainer>
+        <img
+          src={dividerGreen}
+          className="absolute w-full h-auto bottom-0 "
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
       </div>
 
       <div className="bg-darkGreen text-almostWhite">
-        <SectionContainer>
+        <SectionContainer className="lg:pt-0">
           <div className="flex w-full justify-center items-center gap-2 mb-4">
             <img src={formWhite} alt="" className="w-5 text-almostWhite" />
             <Subtitle className="inline whitespace-nowrap">Apoio</Subtitle>

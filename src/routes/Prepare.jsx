@@ -3,12 +3,13 @@ import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
+import divider from "../assets/divider-white-inverted.svg";
 
 function Prepare() {
   return (
     <PageContainer>
-      <div className="bg-darkGreen text-almostWhite">
-        <SectionContainer>
+      <div className="bg-darkGreen text-almostWhite relative">
+        <SectionContainer className="lg:pb-40">
           <div className="flex flex-col items-center mb-6">
             <img
               src={anniversaryLogo}
@@ -26,19 +27,17 @@ function Prepare() {
               href="/documents/guia-de-regras.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-center rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap"
             >
-              <button className="rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap">
-                Guia de regras
-              </button>
+              Guia de regras
             </a>
             <a
               href="/documents/country-report.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-center rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap"
             >
-              <button className="rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap">
-                Relatório do país
-              </button>
+              Relatório do país
             </a>
           </div>
           <Subtitle>Política de prêmios</Subtitle>
@@ -47,10 +46,17 @@ function Prepare() {
             XVI edição do UFRGSMUN não concederá prêmios.
           </Paragraph>
         </SectionContainer>
+        <img
+          src={divider}
+          className="absolute w-full h-auto bottom-0 "
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
       </div>
 
       <div className="text-almostWhite">
-        <SectionContainer>
+        <SectionContainer className="lg:pt-0">
           <div className="py-2 px-10 bg-darkGreen font-black rounded-full text-center">
             Guia de estudos dos comitês
           </div>

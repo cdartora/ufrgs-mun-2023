@@ -5,12 +5,14 @@ import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import earth from "../assets/green-earth.svg";
+import dividerWhite from "../assets/divider-white-inverted.svg";
+import dividerGreen from "../assets/divider-green-inverted.svg";
 
 function Conference() {
   return (
     <PageContainer>
       <div className="bg-darkGreen text-almostWhite relative">
-        <SectionContainer>
+        <SectionContainer className="pb-36">
           <div className="flex flex-col items-center mb-6">
             <img
               src={anniversaryLogo}
@@ -50,10 +52,17 @@ function Conference() {
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
         />
+        <img
+          src={dividerWhite}
+          className="absolute w-full h-auto bottom-0 "
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
       </div>
 
       <div className="relative text-darkTone">
-        <SectionContainer className="text-right">
+        <SectionContainer className="text-right pt-0 pb-36">
           <Subtitle className="mb-4">Acomodação</Subtitle>
           <Paragraph>
             O UFRGS Model United Nations, projeto idealizado e criado por alunos
@@ -73,6 +82,13 @@ function Conference() {
             memórias aos que constroem e participam do evento.
           </Paragraph>
         </SectionContainer>
+        <img
+          src={dividerGreen}
+          className="absolute w-full h-auto bottom-0 "
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
       </div>
 
       <div className="bg-darkGreen text-almostWhite relative">

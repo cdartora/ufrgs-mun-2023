@@ -8,12 +8,13 @@ import FAQ from "../components/apply/FAQ";
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import notice from "../assets/notice.svg";
 import form from "../assets/form.svg";
+import divider from "../assets/divider-white-inverted.svg";
 
 export default function Apply() {
   return (
     <PageContainer>
       <div className="relative text-almostWhite bg-darkGreen">
-        <SectionContainer>
+        <SectionContainer className="lg:pb-40">
           <div className="flex flex-col items-center mb-6">
             <img
               src={anniversaryLogo}
@@ -35,10 +36,17 @@ export default function Apply() {
             <ApplyTabs />
           </div>
         </SectionContainer>
+        <img
+          src={divider}
+          className="absolute w-full h-auto bottom-0 "
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
       </div>
 
       <div className="text-darkTone">
-        <SectionContainer>
+        <SectionContainer className="lg:pt-0">
           <div className="flex flex-col items-center">
             <div className="py-2 px-10 bg-darkGreen text-almostWhite font-black rounded-full">
               Matriz de países
@@ -99,9 +107,11 @@ export default function Apply() {
         </SectionContainer>
       </div>
 
-      <div className="bg-darkGreen text-almostWhite relative">
+      <div className="bg-darkGreen text-almostWhite relative flex justify-center">
+        <div className="bg-lightGray rounded-full py-2 px-6 font-black text-lg text-almostWhite absolute shadow-md -top-[27.5px]">
+          FAQ
+        </div>
         <SectionContainer className="text-center">
-          <Title>FAQ</Title>
           <Paragraph className="my-4">
             Quer tirar dúvidas rápidas sobre o UFRGSMUN? Confira aqui tudo o que
             você precisa saber para participar da edição desse ano!

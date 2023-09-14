@@ -4,6 +4,7 @@ import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import earth from "../assets/right-green-earth.svg";
 import anniversaryLogo from "../assets/20-anos-white.svg";
+import divider from "../assets/divider-white-inverted.svg";
 import CDHNU from "/committees/CDHNU.png";
 import CELAC from "/committees/CELAC.png";
 import CIJ from "/committees/CIJ.png";
@@ -16,8 +17,8 @@ import SPECPOL from "/committees/SPECPOL.png";
 function Committee() {
   return (
     <PageContainer>
-      <div className="bg-darkGreen text-almostWhite">
-        <SectionContainer>
+      <div className="relative bg-darkGreen text-almostWhite">
+        <SectionContainer className="lg:pb-40">
           <div className="flex flex-col items-center mb-6">
             <img
               src={anniversaryLogo}
@@ -44,10 +45,17 @@ function Committee() {
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
         />
+        <img
+          src={divider}
+          className="absolute w-full h-auto bottom-0 "
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
       </div>
 
       <div className="relative text-darkTone">
-        <SectionContainer>
+        <SectionContainer className="lg:pt-0">
           <div className="pb-20">
             <div className={"flex items-end justify-start w-full"}>
               <div className="flex flex-col text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5">

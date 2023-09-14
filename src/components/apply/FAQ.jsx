@@ -20,7 +20,7 @@ function FAQmodal() {
         onClick={openModal}
         className="py-2 px-10 bg-almostWhite text-darkGreen rounded-full"
       >
-        FAQ
+        Dúvidas Frequentes
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>
