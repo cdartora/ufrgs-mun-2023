@@ -13,7 +13,7 @@ function VideosSection() {
             <Title className="w-full mb-2">Teaser</Title>
             <iframe
               className="youtube rounded-2xl shadow-xlg"
-              src="https://www.youtube.com/watch?v=W1TgOzDLBSM&t=128s"
+              src="https://www.youtube.com/embed/W1TgOzDLBSM"
               allow="autoplay; encrypted-media"
               allowFullScreen=""
             ></iframe>
