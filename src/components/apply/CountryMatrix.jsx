@@ -75,7 +75,6 @@ function CountryMatrix() {
                         <th className="border border-gray-300 ">PRESS</th>
                         <th className="border border-gray-300 ">SPECPOL</th>
                         <th className="border border-gray-300 ">UNSC**</th>
-                        <th className="border border-gray-300 ">CIJ*</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -87,7 +86,6 @@ function CountryMatrix() {
                         <td>Al Jazeera</td>
                         <td>Algeria</td>
                         <td>Albania</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Angola</td>
@@ -97,7 +95,6 @@ function CountryMatrix() {
                         <td>Andalou Agency</td>
                         <td>Bangladesh</td>
                         <td>Australia</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Armênia</td>
@@ -107,7 +104,6 @@ function CountryMatrix() {
                         <td>BBC</td>
                         <td>Belgium</td>
                         <td>Brazil</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Austrália</td>
@@ -117,7 +113,6 @@ function CountryMatrix() {
                         <td>Clarín</td>
                         <td>Bolivia</td>
                         <td>China</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Bahrein</td>
@@ -127,7 +122,6 @@ function CountryMatrix() {
                         <td>El País</td>
                         <td>Brazil</td>
                         <td>France</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Bangladesh</td>
@@ -137,7 +131,6 @@ function CountryMatrix() {
                         <td>Estado de S. Paulo</td>
                         <td>China</td>
                         <td>Ghana</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Brasil</td>
@@ -147,7 +140,6 @@ function CountryMatrix() {
                         <td>Global Times</td>
                         <td>Cuba</td>
                         <td>Iran</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Camarões</td>
@@ -157,7 +149,6 @@ function CountryMatrix() {
                         <td>Haaretz</td>
                         <td>Dem. Rep. of Congo</td>
                         <td>Japan</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Chile</td>
@@ -167,7 +158,6 @@ function CountryMatrix() {
                         <td>Le Monde</td>
                         <td>Egypt</td>
                         <td>Mozambique</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>China</td>
@@ -177,7 +167,6 @@ function CountryMatrix() {
                         <td>Reuter</td>
                         <td>France</td>
                         <td>Russia</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Coreia do Sul</td>
@@ -187,7 +176,6 @@ function CountryMatrix() {
                         <td>The New York Times</td>
                         <td>Ghana</td>
                         <td>Syria</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Dinamarca</td>
@@ -197,7 +185,6 @@ function CountryMatrix() {
                         <td>The Times of India</td>
                         <td>Honduras</td>
                         <td>Turkey</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Egito</td>
@@ -207,7 +194,6 @@ function CountryMatrix() {
                         <td>Xinhua</td>
                         <td>India</td>
                         <td>United Arab Emirates</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Eritreia</td>
@@ -217,7 +203,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>Indonesia</td>
                         <td>United Kingdom</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Índia</td>
@@ -227,7 +212,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>Israel</td>
                         <td>United States</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Itália</td>
@@ -236,7 +220,6 @@ function CountryMatrix() {
                         <td>Kuwait</td>
                         <td></td>
                         <td>Japan</td>
-                        <td></td>
                         <td></td>
                       </tr>
                       <tr>
@@ -247,7 +230,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>Malaysia</td>
                         <td></td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Líbia</td>
@@ -256,7 +238,6 @@ function CountryMatrix() {
                         <td>Líbia</td>
                         <td></td>
                         <td>Marocco</td>
-                        <td></td>
                         <td></td>
                       </tr>
                       <tr>
@@ -267,7 +248,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>Nigeria</td>
                         <td></td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Nepal</td>
@@ -276,7 +256,6 @@ function CountryMatrix() {
                         <td>Mauritânia</td>
                         <td></td>
                         <td>Norway</td>
-                        <td></td>
                         <td></td>
                       </tr>
                       <tr>
@@ -287,7 +266,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>Pakistan</td>
                         <td></td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Países Baixos</td>
@@ -296,7 +274,6 @@ function CountryMatrix() {
                         <td>Palestina</td>
                         <td></td>
                         <td>Philippines</td>
-                        <td></td>
                         <td></td>
                       </tr>
                       <tr>
@@ -307,7 +284,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>Portugal</td>
                         <td></td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Peru</td>
@@ -316,7 +292,6 @@ function CountryMatrix() {
                         <td>Somália</td>
                         <td></td>
                         <td>Russia</td>
-                        <td></td>
                         <td></td>
                       </tr>
                       <tr>
@@ -327,7 +302,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>Saudi Arabia</td>
                         <td></td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Reino Unido</td>
@@ -336,7 +310,6 @@ function CountryMatrix() {
                         <td>Tunísia</td>
                         <td></td>
                         <td>Somalia</td>
-                        <td></td>
                         <td></td>
                       </tr>
                       <tr>
@@ -347,7 +320,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>South Africa</td>
                         <td></td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>República Tcheca</td>
@@ -356,7 +328,6 @@ function CountryMatrix() {
                         <td></td>
                         <td></td>
                         <td>Spain</td>
-                        <td></td>
                         <td></td>
                       </tr>
                       <tr>
@@ -367,7 +338,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>Tunisia</td>
                         <td></td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Venezuela</td>
@@ -376,7 +346,6 @@ function CountryMatrix() {
                         <td></td>
                         <td></td>
                         <td>Turkey</td>
-                        <td></td>
                         <td></td>
                       </tr>
                       <tr>
@@ -387,7 +356,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>Tuvalu</td>
                         <td></td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td></td>
@@ -396,7 +364,6 @@ function CountryMatrix() {
                         <td></td>
                         <td></td>
                         <td>United Kingdom</td>
-                        <td></td>
                         <td></td>
                       </tr>
                       <tr>
@@ -407,7 +374,6 @@ function CountryMatrix() {
                         <td></td>
                         <td>United States</td>
                         <td></td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td></td>
@@ -416,7 +382,6 @@ function CountryMatrix() {
                         <td></td>
                         <td></td>
                         <td>Venezuela</td>
-                        <td></td>
                         <td></td>
                       </tr>
                     </tbody>

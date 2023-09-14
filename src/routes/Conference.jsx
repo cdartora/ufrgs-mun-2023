@@ -62,7 +62,7 @@ function Conference() {
       </div>
 
       <div className="relative text-darkTone">
-        <SectionContainer className="text-right pt-0 pb-36">
+        <SectionContainer className="text-right lg:pt-0 lg:pb-36">
           <Subtitle className="mb-4">Acomodação</Subtitle>
           <Paragraph>
             O UFRGS Model United Nations, projeto idealizado e criado por alunos
