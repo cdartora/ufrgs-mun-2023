@@ -1,11 +1,12 @@
 import PageContainer from "../components/PageContainer";
 import SectionContainer from "../components/SectionContainer";
 import { Title, Subtitle, Paragraph } from "../components/Formatting";
-import PartnersCarousel from "../components/PartnersCarousel";
+import PartnersCarousel from "../components/partners/PartnersCarousel";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import form from "../assets/form.svg";
-import formWhite from "../assets/partners/form-white.svg";
+import formWhite from "../assets/form-white.svg";
+import earth from "../assets/right-green-earth.svg"
 
 function Partners() {
   return (

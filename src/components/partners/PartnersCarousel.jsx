@@ -1,4 +1,4 @@
-import partnerImg from '../assets/partners/roche-color.png';
+import partnerImg from '../../assets/roche-color.png';
 
 const partners = [
     {
