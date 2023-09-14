@@ -9,6 +9,7 @@ import anniversaryLogo from "../assets/20-anos-white.svg";
 import notice from "../assets/notice.svg";
 import form from "../assets/form.svg";
 import divider from "../assets/divider-white-inverted.svg";
+import earth from "../assets/green-earth.svg";
 
 export default function Apply() {
   return (
@@ -39,6 +40,13 @@ export default function Apply() {
         <img
           src={divider}
           className="absolute w-full h-auto bottom-0 "
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
+        <img
+          src={earth}
+          className="absolute z-10 left-0 top-0 w-52 opacity-10"
           draggable="false"
           style={{ userSelect: "none" }}
           onMouseDown={() => false}

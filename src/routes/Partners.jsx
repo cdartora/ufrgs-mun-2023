@@ -6,7 +6,7 @@ import PartnersCarousel from "../components/partners/PartnersCarousel";
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import form from "../assets/form.svg";
 import formWhite from "../assets/form-white.svg";
-import earth from "../assets/right-green-earth.svg";
+import earth from "../assets/green-earth.svg";
 import dividerWhite from "../assets/divider-white-inverted.svg";
 import dividerGreen from "../assets/divider-green-inverted.svg";
 
@@ -32,7 +32,7 @@ function Partners() {
         </SectionContainer>
         <img
           src={earth}
-          className="absolute z-10 right-0 top-0 w-52 opacity-10"
+          className="absolute z-10 left-0 top-0 w-52 opacity-10"
           draggable="false"
           style={{ userSelect: "none" }}
           onMouseDown={() => false}

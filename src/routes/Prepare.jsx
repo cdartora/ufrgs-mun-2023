@@ -4,6 +4,7 @@ import { Title, Subtitle, Paragraph } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import divider from "../assets/divider-white-inverted.svg";
+import earth from "../assets/right-green-earth.svg";
 
 function Prepare() {
   return (
@@ -49,6 +50,13 @@ function Prepare() {
         <img
           src={divider}
           className="absolute w-full h-auto bottom-0 "
+          draggable="false"
+          style={{ userSelect: "none" }}
+          onMouseDown={() => false}
+        />
+        <img
+          src={earth}
+          className="absolute z-10 right-0 top-0 w-52 opacity-10"
           draggable="false"
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
