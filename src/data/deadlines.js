@@ -1,33 +1,38 @@
 const deadlines = [
   {
-    month: "AGO",
-    day: "01",
-    name: "Lançamento matriz de países",
+    month: "ABR",
+    day: "28",
+    name: "Divulgação Data e Local do Evento",
   },
   {
-    month: "AGO",
-    day: "05",
-    name: "Abertura das inscrições",
+    month: "JUN",
+    day: "24",
+    name: "Início Curso de Extensão",
   },
   {
-    month: "SET",
-    day: "02",
-    name: "Prazo edital de benefícios",
-  },
-  {
-    month: "SET",
-    day: "23",
-    name: "Abertura do formulário B",
+    month: "JUL",
+    day: "15",
+    name: "Fim Curso de Extensão e Divulgação do Trailer",
   },
   {
     month: "SET",
-    day: "25",
-    name: "Lançamento guias de estudos",
+    day: "20",
+    name: "Divulgação Matriz dos Países",
+  },
+  {
+    month: "SET",
+    day: "22",
+    name: "Abertura Inscrições",
   },
   {
     month: "OUT",
-    day: "31",
+    day: "20",
     name: "Primeiro dia do UFRGSMUN",
+  },
+  {
+    month: "NOV",
+    day: "1",
+    name: "Início XX UFRGSMUN",
   },
 ];
 

@@ -81,6 +81,20 @@ function Conference() {
             espera possibilitar uma intensa troca de saberes, experiências e
             memórias aos que constroem e participam do evento.
           </Paragraph>
+          <Paragraph className="mb-4">
+            Este ano, mais uma vez, contamos com a iniciativa de Alocação
+            Solidária para estudantes que venham de outros estados ou cidades
+            distantes de Porto Alegre. Caso você tenha interesse, preencha o
+            formulário a seguir.
+          </Paragraph>
+          <a
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf1_RUXFCpBcdh2I6rvoS_k67A2Vy3kxWBVoBpFBj4uECuj3g/viewform"
+            rel="noreferer noopener"
+            className=" mt-4 rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6"
+          >
+            Formulário Acomodação Solidária 2023
+          </a>
         </SectionContainer>
         <img
           src={dividerGreen}

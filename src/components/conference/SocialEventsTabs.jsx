@@ -6,96 +6,65 @@ export default function SocialEventsTabs() {
   const schedule = [
     {
       id: 1,
-      day: "31",
-      month: "Out",
+      day: "1",
+      month: "Nov",
       schedule: [
         {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
+          hour: "14:00h - 15:00h",
+          description: "Credenciamento",
         },
         {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
+          hour: "15:00h - 18:00h",
+          description: "Início do Mock",
+        },
+        {
+          hour: "18:00h - 20:00h",
+          description: "Cerimônia de Abertura no Plaza São Rafael",
+        },
+        {
+          hour: "20:00h",
+          description: "Confraternização Social",
         },
       ],
     },
     {
       id: 2,
-      day: "1",
+      day: "2",
       month: "Nov",
       schedule: [
         {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
+          hour: "19:00h - 21:00h",
+          description: "Jantar dos Comitês",
         },
         {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
+          hour: "21:00h",
+          description: "Show de Talentos",
         },
       ],
     },
     {
       id: 3,
-      day: "2",
+      day: "3",
       month: "Nov",
       schedule: [
         {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
-        },
-        {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
-        },
-        {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
-        },
-        {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
+          hour: "20:00h",
+          description: "Festa Open Bar à Fantasia",
         },
       ],
     },
     {
       id: 4,
-      day: "3",
-      month: "Nov",
-      schedule: [
-        {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
-        },
-        {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
-        },
-      ],
-    },
-    {
-      id: 5,
       day: "4",
       month: "Nov",
       schedule: [
         {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
+          hour: "18:00h - 19:00h",
+          description: "Cerimônia de Encerramento",
         },
         {
-          hour: "17:00h - 20:00h",
-          description:
-            "Dados sobre os eventos que ocorrerão nesta data e horário",
+          hour: "19:00h",
+          description: "Happy Hour",
         },
       ],
     },

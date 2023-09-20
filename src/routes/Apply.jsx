@@ -55,18 +55,6 @@ export default function Apply() {
 
       <div className="text-darkTone">
         <SectionContainer className="lg:pt-0">
-          <div className="flex flex-col items-center">
-            <div className="py-2 px-10 bg-darkGreen text-almostWhite font-black rounded-full">
-              Matriz de países
-            </div>
-            <div className="flex justify-center gap-4 mt-4 text-sm md:flex-row flex-col w-full">
-              <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
-                Countries
-              </button>
-              <CountryMatrix />
-            </div>
-          </div>
-
           <div className="mt-10">
             <div className="flex justify-center items-center gap-2">
               <img src={form} alt="" className="w-5" />
@@ -75,16 +63,17 @@ export default function Apply() {
             </div>
             <div className="mt-4">
               <div className="font-light">
-                <p>As inscrições estarão abertas</p>
-                <p>até o dia 16 de setembro ou até acabarem as vagas.</p>
+                <Paragraph>
+                  Para se inscrever, baixa preencher o formulário abaixo,
+                  informar seus comitês e representações de preferência e anexar
+                  os comprovantes de pagamento.
+                </Paragraph>
               </div>
               <div className="flex gap-4 mt-4 font-normal text-sm flex-col md:flex-row">
                 <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
-                  Formulário A
+                  Formulário de Inscrição
                 </button>
-                <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
-                  Press
-                </button>
+                <CountryMatrix />
               </div>
             </div>
           </div>
@@ -108,9 +97,14 @@ export default function Apply() {
               equipe do projeto.Interessadas/os devem enviar a documentação para
               ufrgsmun@gmail.com até o dia 02/09.
             </p>
-            <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6">
+            <a
+              target="_blank"
+              href="/documents/edital-de-benefícios.pdf"
+              rel="noreferer noopener"
+              className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6"
+            >
               Edital
-            </button>
+            </a>
           </div>
         </SectionContainer>
       </div>

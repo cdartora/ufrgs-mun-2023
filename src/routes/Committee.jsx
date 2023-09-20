@@ -5,14 +5,14 @@ import { Title, Subtitle, Paragraph } from "../components/Formatting";
 import earth from "../assets/right-green-earth.svg";
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import divider from "../assets/divider-white-inverted.svg";
-import CDHNU from "/committees/CDHNU.png";
-import CELAC from "/committees/CELAC.png";
-import CIJ from "/committees/CIJ.png";
-import DPSUA from "/committees/DPS-UA.png";
-import CESLA from "/committees/CES-LA.png";
-import PRESS from "/committees/PRESS.png";
-import UNSC from "/committees/UNSC.png";
-import SPECPOL from "/committees/SPECPOL.png";
+import CDHNU from "/committees/CDHNU.webp";
+import CELAC from "/committees/CELAC.webp";
+import CIJ from "/committees/CIJ.webp";
+import DPSUA from "/committees/DPS-UA.webp";
+import CESLA from "/committees/CES-LA.webp";
+import PRESS from "/committees/PRESS.webp";
+import UNSC from "/committees/UNSC.webp";
+import SPECPOL from "/committees/SPECPOL.webp";
 
 function Committee() {
   return (
@@ -40,7 +40,7 @@ function Committee() {
         </SectionContainer>
         <img
           src={earth}
-          className="absolute z-10 right-0 top-0 w-52 opacity-10"
+          className="absolute z-10 right-0 top-0 w-44 opacity-10"
           draggable="false"
           style={{ userSelect: "none" }}
           onMouseDown={() => false}
@@ -57,16 +57,24 @@ function Committee() {
       <div className="relative text-darkTone">
         <SectionContainer className="lg:pt-0">
           <div className="pb-20">
-            <div className={"flex items-end justify-start w-full"}>
-              <div className="flex flex-col text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5">
+            <div className="flex justify-center w-full">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-right">
                 <span className="font-extrabold">
-                  Conselho de Direitos Humanos
+                  Conselho
+                  <br />
+                  de Direitos
+                  <br />
+                  Humanos
                 </span>
-                <span className="font-light">das Nações Unidas</span>
+                <span className="font-light">
+                  das Nações
+                  <br />
+                  Unidas
+                </span>
               </div>
               <img
                 src={CDHNU}
-                className="w-72"
+                className="w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
@@ -116,16 +124,21 @@ function Committee() {
           </div>
 
           <div className="pb-20">
-            <div className="flex items-end justify-start w-full flex-row-reverse text-right">
-              <div className="flex flex-col text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5">
-                <span className="font-extrabold">Comunidade de Estados</span>
+            <div className="flex justify-center w-full flex-row-reverse text-right">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-left">
+                <span className="font-extrabold">
+                  Comunidade
+                  <br />
+                  de Estados
+                </span>
                 <span className="font-light">
-                  Latino-Americanos e Caribenhos
+                  Latino-Americanos
+                  <br />e Caribenhos
                 </span>
               </div>
               <img
                 src={CELAC}
-                className="w-72"
+                className="w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
@@ -175,14 +188,18 @@ function Committee() {
           </div>
 
           <div className="pb-20">
-            <div className={"flex items-end justify-start w-full"}>
-              <div className="flex flex-col text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5">
-                <span className="font-extrabold">Corte Internacional</span>
+            <div className="flex justify-center w-full mx-auto">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-right">
+                <span className="font-extrabold">
+                  Corte
+                  <br />
+                  Internacional
+                </span>
                 <span className="font-light">de Justiça</span>
               </div>
               <img
                 src={CIJ}
-                className="w-72"
+                className="w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
@@ -253,16 +270,17 @@ function Committee() {
           </div>
 
           <div className="pb-20">
-            <div className="flex items-end justify-start w-full flex-row-reverse text-right">
-              <div className="flex flex-col text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5">
+            <div className="flex justify-center w-full flex-row-reverse text-right">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-left">
                 <span className="font-extrabold">
-                  Defesa, Proteção e Segurança
+                  Defesa, Proteção
+                  <br />e Segurança
                 </span>
                 <span className="font-light">da União Africana</span>
               </div>
               <img
                 src={DPSUA}
-                className="w-72"
+                className="w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
@@ -310,16 +328,18 @@ function Committee() {
           </div>
 
           <div className="pb-20">
-            <div className={"flex items-end justify-start w-full"}>
-              <div className="flex flex-col text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5">
+            <div className="flex justify-center w-full mx-auto">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-right">
                 <span className="font-extrabold">
-                  Conselho Econômico e Social
+                  Conselho
+                  <br />
+                  Econômico e Social
                 </span>
                 <span className="font-light">da Liga Árabe</span>
               </div>
               <img
                 src={CESLA}
-                className="w-72"
+                className="w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
@@ -361,13 +381,14 @@ function Committee() {
           </div>
 
           <div className="pb-20">
-            <div className="flex items-end justify-around w-full flex-row-reverse text-right">
-              <div className="flex flex-col text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5">
-                <span className="font-extrabold">PRESS</span>
+            <div className="flex justify-center w-full flex-row-reverse text-right">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-left">
+                <span className="font-extrabold">Imprensa</span>
+                <span className="font-light">Internacional</span>
               </div>
               <img
                 src={PRESS}
-                className="w-72"
+                className="w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
@@ -409,14 +430,22 @@ function Committee() {
           </div>
 
           <div className="pb-20">
-            <div className="flex items-end justify-start w-full">
-              <div className="flex flex-col text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5">
-                <span className="font-extrabold">The Special Political</span>
-                <span className="font-light">and Decolonization Committee</span>
+            <div className="flex justify-center w-full mx-auto">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-right">
+                <span className="font-extrabold">
+                  The Special
+                  <br />
+                  Political
+                </span>
+                <span className="font-light">
+                  and Decolonization
+                  <br />
+                  Committee
+                </span>
               </div>
               <img
                 src={SPECPOL}
-                className="w-72"
+                className="w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
@@ -451,14 +480,22 @@ function Committee() {
           </div>
 
           <div className="pb-20">
-            <div className="flex items-end justify-start w-full flex-row-reverse text-right">
-              <div className="flex flex-col text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5">
-                <span className="font-extrabold">The United Nations</span>
-                <span className="font-light">Security Council</span>
+            <div className="flex justify-center w-full flex-row-reverse text-right">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-left">
+                <span className="font-extrabold">
+                  The United
+                  <br />
+                  Nations
+                </span>
+                <span className="font-light">
+                  Security
+                  <br />
+                  Council
+                </span>
               </div>
               <img
                 src={UNSC}
-                className="w-72"
+                className="w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}

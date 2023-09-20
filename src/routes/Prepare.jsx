@@ -41,11 +41,6 @@ function Prepare() {
               Relatório do país
             </a>
           </div>
-          <Subtitle>Política de prêmios</Subtitle>
-          <Paragraph className="mb-4">
-            Visando estimular e valorizar o trabalho em grupo e a cooperação, a
-            XVI edição do UFRGSMUN não concederá prêmios.
-          </Paragraph>
         </SectionContainer>
         <img
           src={divider}
