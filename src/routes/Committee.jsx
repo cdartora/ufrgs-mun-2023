@@ -55,10 +55,10 @@ function Committee() {
       </div>
 
       <div className="relative text-darkTone">
-        <SectionContainer className="lg:pt-0">
-          <div className="pb-20">
-            <div className="flex justify-center w-full">
-              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-right">
+        <SectionContainer className="md:pt-0 md:max-w-screen-lg">
+          <div className="pb-20 md:flex md:gap-4">
+            <div className="flex md:flex-col md:justify-start md:overflow-visible justify-center w-full md:w-1/3">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders md:pb-0 pb-5 text-right">
                 <span className="font-extrabold">
                   Conselho
                   <br />
@@ -74,13 +74,13 @@ function Committee() {
               </div>
               <img
                 src={CDHNU}
-                className="w-44"
+                className="md:w-full w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
               />
             </div>
-            <div>
+            <div className="md:w-2/3">
               <Paragraph className="text-darkTone text-justify">
                 Fundado no dia 15 de março de 2006 pela resolução 60/251 da
                 Assembléia Geral das Nações Unidas, o Conselho de Direitos
@@ -123,9 +123,9 @@ function Committee() {
             </div>
           </div>
 
-          <div className="pb-20">
-            <div className="flex justify-center w-full flex-row-reverse text-right">
-              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-left">
+          <div className="pb-20 md:flex md:gap-4">
+            <div className="flex md:flex-col md:justify-start md:w-1/3 justify-center w-full flex-row-reverse text-right md:overflow-visible">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders md:pb-0 pb-5">
                 <span className="font-extrabold">
                   Comunidade
                   <br />
@@ -138,13 +138,13 @@ function Committee() {
               </div>
               <img
                 src={CELAC}
-                className="w-44"
+                className="md:w-full w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
               />
             </div>
-            <div>
+            <div className="md:w-2/3">
               <Paragraph className="text-darkTone text-justify">
                 Criada em fevereiro de 2010, na Cúpula da Unidade da América
                 Latina e do Caribe, a Comunidade de Estados Latino-Americanos e
@@ -187,9 +187,9 @@ function Committee() {
             </div>
           </div>
 
-          <div className="pb-20">
-            <div className="flex justify-center w-full mx-auto">
-              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-right">
+          <div className="pb-20 md:flex md:gap-4">
+            <div className="flex md:flex-col md:justify-start md:w-1/3 justify-center w-full mx-auto">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders md:pb-0 pb-5 text-right">
                 <span className="font-extrabold">
                   Corte
                   <br />
@@ -199,13 +199,13 @@ function Committee() {
               </div>
               <img
                 src={CIJ}
-                className="w-44"
+                className="md:w-full w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
               />
             </div>
-            <div>
+            <div className="md:w-2/3">
               <Paragraph className="text-darkTone text-justify">
                 A Corte Internacional de Justiça (CIJ) é o principal órgão
                 jurídico vinculado às Nações Unidas, localizada em Haia, Países
@@ -269,9 +269,9 @@ function Committee() {
             </div>
           </div>
 
-          <div className="pb-20">
-            <div className="flex justify-center w-full flex-row-reverse text-right">
-              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-left">
+          <div className="pb-20 md:flex md:gap-4">
+            <div className="flex md:flex-col md:justify-start md:w-1/3 justify-center w-full flex-row-reverse text-right md:overflow-visible">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders md:pb-0 pb-5 text-right">
                 <span className="font-extrabold">
                   Defesa, Proteção
                   <br />e Segurança
@@ -280,13 +280,13 @@ function Committee() {
               </div>
               <img
                 src={DPSUA}
-                className="w-44"
+                className="md:w-full w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
               />
             </div>
-            <div>
+            <div className="md:w-2/3">
               <Paragraph className="text-darkTone text-justify">
                 Em 1999, a Organização da Unidade Africana (OUA) declarou apoio
                 a criação de uma unidade africana, com objetivos de integrar o
@@ -327,9 +327,9 @@ function Committee() {
             </div>
           </div>
 
-          <div className="pb-20">
-            <div className="flex justify-center w-full mx-auto">
-              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-right">
+          <div className="pb-20 md:flex md:gap-4">
+            <div className="flex md:flex-col md:justify-start md:w-1/3 justify-center w-full mx-auto">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders md:pb-0 pb-5 text-right">
                 <span className="font-extrabold">
                   Conselho
                   <br />
@@ -339,13 +339,13 @@ function Committee() {
               </div>
               <img
                 src={CESLA}
-                className="w-44"
+                className="md:w-full w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
               />
             </div>
-            <div>
+            <div className="md:w-2/3">
               <Paragraph className="text-darkTone text-justify">
                 O Conselho Econômico e Social da Liga Árabe é um órgão que
                 articula a integração econômica e está incorporado à Liga Árabe.
@@ -380,21 +380,21 @@ function Committee() {
             </div>
           </div>
 
-          <div className="pb-20">
-            <div className="flex justify-center w-full flex-row-reverse text-right">
-              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-left">
+          <div className="pb-20 md:flex md:gap-4">
+            <div className="flex md:flex-col md:justify-start md:w-1/3 justify-center w-full flex-row-reverse text-right md:overflow-visible">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders md:pb-0 pb-5 text-right">
                 <span className="font-extrabold">Imprensa</span>
                 <span className="font-light">Internacional</span>
               </div>
               <img
                 src={PRESS}
-                className="w-44"
+                className="md:w-full w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
               />
             </div>
-            <div>
+            <div className="md:w-2/3">
               <Paragraph className="text-darkTone text-justify">
                 A imprensa internacional — no papel de coletar, investigar,
                 analisar, checar e transmitir acontecimentos em um mundo
@@ -429,9 +429,9 @@ function Committee() {
             </div>
           </div>
 
-          <div className="pb-20">
-            <div className="flex justify-center w-full mx-auto">
-              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-right">
+          <div className="pb-20 md:flex md:gap-4">
+            <div className="flex md:flex-col md:justify-start md:w-1/3 justify-center w-full mx-auto">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders md:pb-0 pb-5 text-right">
                 <span className="font-extrabold">
                   The Special
                   <br />
@@ -445,13 +445,13 @@ function Committee() {
               </div>
               <img
                 src={SPECPOL}
-                className="w-44"
+                className="md:w-full w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
               />
             </div>
-            <div>
+            <div className="md:w-2/3">
               <Paragraph className="text-darkTone text-justify">
                 The Fourth Committee of the General Assembly of the United
                 Nation is the Special Political and Decolonization Committee,
@@ -479,9 +479,9 @@ function Committee() {
             </div>
           </div>
 
-          <div className="pb-20">
-            <div className="flex justify-center w-full flex-row-reverse text-right">
-              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders lg:pb-14 pb-5 text-left">
+          <div className="pb-20 md:flex md:gap-4">
+            <div className="flex md:flex-col md:justify-start md:w-1/3 justify-center w-full flex-row-reverse text-right md:overflow-visible">
+              <div className="flex flex-col justify-center text-xl lg:text-3xl text-darkBorders md:pb-0 pb-5 text-right">
                 <span className="font-extrabold">
                   The United
                   <br />
@@ -495,13 +495,13 @@ function Committee() {
               </div>
               <img
                 src={UNSC}
-                className="w-44"
+                className="md:w-full w-44"
                 draggable="false"
                 style={{ userSelect: "none" }}
                 onMouseDown={() => false}
               />
             </div>
-            <div>
+            <div className="md:w-2/3">
               <Paragraph className="text-darkTone text-justify">
                 The United Nations Security Council (UNSC) is one of the main
                 organs of the United Nations, responsible for the peace and
