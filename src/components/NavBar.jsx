@@ -66,13 +66,13 @@ export default function NavBar() {
                 label="Preparação"
                 mobile={true}
                 closeMenu={toggleMenu}
-                href="/prepare"
+                // href="/prepare"
               />
               <MenuItem
                 label="Parceiros"
                 mobile={true}
                 closeMenu={toggleMenu}
-                href="/partners"
+                // href="/partners"
               />
             </div>
           </>
@@ -92,8 +92,14 @@ export default function NavBar() {
         <MenuItem label="Conferência" href="/conference" />
         <MenuItem label="Comitês" href="/committees" />
         <MenuItem label="Inscrições" href="/apply" />
-        <MenuItem label="Preparação" href="/prepare" />
-        <MenuItem label="Parceiros" href="/partners" />
+        <MenuItem
+          label="Preparação"
+          // href="/prepare"
+        />
+        <MenuItem
+          label="Parceiros"
+          // href="/partners"
+        />
       </div>
     </nav>
   );
