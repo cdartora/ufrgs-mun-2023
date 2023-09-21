@@ -7,6 +7,8 @@ import anniversaryLogo from "../assets/20-anos-white.svg";
 import earth from "../assets/green-earth.svg";
 import dividerWhite from "../assets/divider-white-inverted.svg";
 import dividerGreen from "../assets/divider-green-inverted.svg";
+import smile from "../assets/smile.svg";
+import events from "../assets/events.svg";
 
 function Conference() {
   return (
@@ -63,7 +65,10 @@ function Conference() {
 
       <div className="relative text-darkTone">
         <SectionContainer className="text-right lg:pt-0 lg:pb-36">
-          <Subtitle className="mb-4">Acomodação</Subtitle>
+          <div className="flex w-full justify-end gap-1 items-center mb-4">
+            <img src={smile} alt="smileface rosto sorrindo" />
+            <Subtitle>Acomodação</Subtitle>
+          </div>
           <Paragraph>
             O UFRGS Model United Nations, projeto idealizado e criado por alunos
             da Universidade Federal do Rio Grande do Sul (UFRGS), foi a primeira
@@ -107,7 +112,12 @@ function Conference() {
 
       <div className="bg-darkGreen text-almostWhite relative">
         <SectionContainer className="flex flex-col items-center">
-          <Subtitle className="text-center mb-2">Eventos Sociais</Subtitle>
+          <div className="justify-center flex flex-col gap-1 mb-2">
+            <div className="flex justify-center">
+              <img src={events} alt="três figuras de pessoas" />
+            </div>
+            <Subtitle>Eventos Sociais</Subtitle>
+          </div>
           <Paragraph className="mb-2">
             Debater e simular o dia todo pode ser desgastante, sabemos disso.
             Que melhor maneira de recarregar suas energias do que curtir uma

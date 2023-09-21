@@ -8,6 +8,7 @@ import anniversaryLogo from "../assets/20-anos-white.svg";
 import dialog from "../assets/dialog.svg";
 import divider from "../assets/divider-white-inverted.svg";
 import earth from "../assets/right-green-earth.svg";
+import scholar from "../assets/scholar.svg";
 
 export default function About() {
   return (
@@ -56,7 +57,10 @@ export default function About() {
 
       <div className="relative text-darkTone">
         <SectionContainer className="text-right lg:pt-0">
-          <Subtitle className="mb-4">E o UFRGSMUN?</Subtitle>
+          <div className="flex w-full justify-end gap-1 items-center mb-4">
+            <img src={scholar} alt="toga de formando" />
+            <Subtitle className="mb-4">E o UFRGSMUN?</Subtitle>
+          </div>
           <Paragraph>
             Um “Modelo das Nações Unidas” é uma conferência que proporciona aos
             seus participantes uma simulação sobre temas importantes da agenda
