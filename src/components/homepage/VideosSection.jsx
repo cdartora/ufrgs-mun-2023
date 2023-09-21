@@ -21,7 +21,7 @@ function VideosSection() {
           <img
             src={earth}
             alt=""
-            className="z-10 absolute -left-20 bottom-0 md:hidden"
+            className="z-10 absolute -left-20 bottom-0 lg:hidden"
             draggable="false"
             style={{ userSelect: "none" }}
             onMouseDown={() => false}
@@ -30,7 +30,7 @@ function VideosSection() {
           <img
             src={earth}
             alt=""
-            className="z-10 absolute -left-20 bottom-10 hidden md:block"
+            className="z-10 absolute -left-20 bottom-10 hidden lg:block"
             draggable="false"
             style={{ userSelect: "none" }}
             onMouseDown={() => false}
