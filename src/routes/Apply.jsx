@@ -70,9 +70,14 @@ export default function Apply() {
                 </Paragraph>
               </div>
               <div className="flex gap-4 mt-4 font-normal text-sm flex-col md:flex-row">
-                <button className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap">
+                <a
+                  className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScKXzdZv-29nj7k18k_XM8NwqU6ld6B5u63apwyy6jjCOyHCQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
                   Formulário de Inscrição
-                </button>
+                </a>
                 <CountryMatrix />
               </div>
             </div>
