@@ -7,24 +7,26 @@ import earth from "../../assets/earth.svg";
 const steps = [
   {
     name: "Passo 1",
-    title: "Organizar uma delegação",
+    title: "Escolher uma delegação",
     steps: [
-      "Checar os seus comitês preferidos e ver as delegações disponíveis na Matriz de Delegações encontrada nessa mesma página.",
+      "Checar os seus comitês preferidos e ver as delegações disponíveis na Matriz de Delegações!",
     ],
   },
   {
     name: "Passo 2",
     title: "Preenchendo Formulário de Inscrição",
-    steps: [
-      "Uma vez escolhido suas delegações para se tornar um delegado basta se inscrever preenchendo o Formulário de Inscrição com seus dados pessoais.",
-    ],
+    steps: ["Preencher o formulário de inscrição"],
   },
   {
     name: "Passo 3",
     title: "Pagamento",
+    steps: ["Realizar o pagamento."],
+  },
+  {
+    name: "Passo 4",
+    title: "Comprovação de Pagamento",
     steps: [
-      "O valor por pessoa é de R$155,00 em uma parcela ou R$175,00 dividido em duas vezes.",
-      "O comprovante do pagamento ou documento de estudante beneficiário socioeconômico deve ser enviado pelo(a) delegado(a) para o e-mail do UFRGSMUN.",
+      "Anexar o comprovante de pagamento ou o documento de estudante beneficiário socioeconômico",
     ],
   },
 ];
@@ -61,7 +63,7 @@ function ApplyTabs() {
                     />
                   </div>
                 </Tab>
-                {idx != 2 && (
+                {idx != 3 && (
                   <div className="h-1 w-3 bg-almostWhite opacity-20" />
                 )}
               </>
@@ -72,7 +74,7 @@ function ApplyTabs() {
           {steps.map((s) => (
             <Tab.Panel
               key={s.name}
-              className="rounded-xl bg-almostWhite p-4 md:p-10"
+              className="rounded-xl bg-almostWhite p-4 md:p-10 w-96"
             >
               <h4 className="font-black text-lg mb-4 relative text-darkTone">
                 {s.title}
