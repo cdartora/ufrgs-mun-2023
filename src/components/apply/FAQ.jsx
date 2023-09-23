@@ -81,18 +81,6 @@ function FAQmodal() {
                     mundo.
                   </Paragraph>
 
-                  <Subtitle className="mt-4">COMO POSSO ME INSCREVER?</Subtitle>
-
-                  <Paragraph>
-                    O primeiro passo para se inscrever no UFRGSMUN é montar uma
-                    delegação, a qual consiste em um grupo de 1 a 20 pessoas que
-                    gostariam de participar do evento. No entanto, se você não
-                    possuir uma delegação, você pode se inscrever
-                    individualmente: escolhendo um país com apenas uma vaga ou
-                    pedindo para ser alocado em alguma delegação que possuir seu
-                    país de preferência.
-                  </Paragraph>
-
                   <Subtitle className="mt-4">
                     COMO A MINHA DELEGAÇÃO ESCOLHE O COMITÊ? E A REPRESENTAÇÃO?
                   </Subtitle>
@@ -133,8 +121,8 @@ function FAQmodal() {
                   </Subtitle>
 
                   <Paragraph>
-                    O UFRGSMUN acontecerá entre os dias 31 de outubro e 4 de
-                    novembro de 2018.
+                    O UFRGSMUN acontecerá entre os dias 1 de outubro e 4 de
+                    novembro de 2023.
                   </Paragraph>
 
                   <Subtitle className="mt-4">
@@ -144,13 +132,6 @@ function FAQmodal() {
                   <Paragraph>
                     O local do evento é o Hotel Plaza São Rafael, localizado em
                     Porto Alegre, Rio Grande do Sul.
-                  </Paragraph>
-
-                  <Subtitle className="mt-4">QUANTO CUSTA O EVENTO?</Subtitle>
-
-                  <Paragraph>
-                    A inscrição tem um custo de R$155,00 ou, se pago em duas
-                    vezes, R$175,00.
                   </Paragraph>
 
                   <Subtitle className="mt-4">EXISTE ALGUM REEMBOLSO?</Subtitle>
