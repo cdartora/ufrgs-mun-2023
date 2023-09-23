@@ -25,11 +25,6 @@ const deadlines = [
     name: "Abertura Inscrições",
   },
   {
-    month: "OUT",
-    day: "20",
-    name: "Primeiro dia do UFRGSMUN",
-  },
-  {
     month: "NOV",
     day: "1",
     name: "Início XX UFRGSMUN",
