@@ -59,7 +59,7 @@ export default function About() {
         <SectionContainer className="text-right lg:pt-0">
           <div className="flex w-full justify-end gap-1 items-center mb-4">
             <img src={scholar} alt="toga de formando" />
-            <Subtitle className="mb-4">E o UFRGSMUN?</Subtitle>
+            <Subtitle>E o UFRGSMUN?</Subtitle>
           </div>
           <Paragraph>
             Um “Modelo das Nações Unidas” é uma conferência que proporciona aos
