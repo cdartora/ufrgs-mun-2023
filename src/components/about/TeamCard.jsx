@@ -6,6 +6,7 @@ import dialog from "../../assets/dialog.svg";
 
 function TeamCard({ teamMember: { image, name, description } }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   function closeModal() {
     setIsOpen(false);
@@ -21,10 +22,18 @@ function TeamCard({ teamMember: { image, name, description } }) {
     <>
       <li
         onClick={openModal}
-        className="relative rounded-md p-3 flex flex-col justify-start items-center gap-2 hover:bg-white/[0.12] cursor-pointer"
+        className={`${
+          !imageLoaded ? "cursor-wait" : ""
+        } relative rounded-md p-3 flex flex-col justify-start items-center gap-2 hover:bg-white/[0.12] cursor-pointer`}
       >
         <div className="h-16 w-16 rounded-full overflow-hidden flex justify-center items-center relative">
-          <img src={image ? image : noImage} alt={`${name} foto`} />
+          <img
+            src={image ? image : noImage}
+            alt={`${name} foto`}
+            className={`${imageLoaded ? "block" : "hidden"}`}
+            onLoad={() => setImageLoaded(true)}
+          />
+          {!imageLoaded && <img src={noImage} alt={`${name} foto`} />}
         </div>
         {description && (
           <img
