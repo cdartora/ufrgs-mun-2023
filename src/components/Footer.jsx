@@ -9,13 +9,13 @@ function Footer() {
       <div className="flex flex-col max-w-screen-md">
         <img src={ufrgsMunLogo} alt="logo UFRGS Mun 2023" />
         <div className="flex justify-between py-2">
-          <a href="" target="_blank">
+          <a href="https://www.instagram.com/ufrgsmun/" target="_blank">
             <img src={instagram} alt="logo instagram" className="w-5" />
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.youtube.com/@UFRGSMUN" target="_blank">
             <img src={youtube} alt="logo youtube" className="w-5" />
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.facebook.com/ufrgsmun" target="_blank">
             <img src={facebook} alt="logo facebook" className="w-5" />
           </a>
         </div>
