@@ -1,49 +1,51 @@
-import partnerImg from '../../assets/roche-color.png';
+import chouette from "../../assets/partners/chouette.jpg";
+import fraport from "../../assets/partners/fraport.png";
+import cervantes from "../../assets/partners/cervantes.png";
+import novasVeredas from "../../assets/partners/novas-veredas.png";
 
 const partners = [
-    {
-        name: "Instituto Roche",
-        img: partnerImg,
-        description: "The Roche Institute was founded in the year of 1973 and its main objective relies on the spreading of the French language and culture in Porto Alegre. Founded by Monsieur and Madame Roche, the Institute has its own teaching method, which was envisioned and developed especially for Brazilians and its culture and language.Throughout its 45 years, Roche consolidated itself as a reference in quality and success, providing knowledge and proficiency to all those who wish to learn French."
-    },
-    {
-        name: "Instituto Roche",
-        img: partnerImg,
-        description: "The Roche Institute was founded in the year of 1973 and its main objective relies on the spreading of the French language and culture in Porto Alegre. Founded by Monsieur and Madame Roche, the Institute has its own teaching method, which was envisioned and developed especially for Brazilians and its culture and language.Throughout its 45 years, Roche consolidated itself as a reference in quality and success, providing knowledge and proficiency to all those who wish to learn French."
-    },
-    {
-        name: "Instituto Roche",
-        img: partnerImg,
-        description: "The Roche Institute was founded in the year of 1973 and its main objective relies on the spreading of the French language and culture in Porto Alegre. Founded by Monsieur and Madame Roche, the Institute has its own teaching method, which was envisioned and developed especially for Brazilians and its culture and language.Throughout its 45 years, Roche consolidated itself as a reference in quality and success, providing knowledge and proficiency to all those who wish to learn French."
-    },
-    {
-        name: "Instituto Roche",
-        img: partnerImg,
-        description: "The Roche Institute was founded in the year of 1973 and its main objective relies on the spreading of the French language and culture in Porto Alegre. Founded by Monsieur and Madame Roche, the Institute has its own teaching method, which was envisioned and developed especially for Brazilians and its culture and language.Throughout its 45 years, Roche consolidated itself as a reference in quality and success, providing knowledge and proficiency to all those who wish to learn French."
-    },
-    {
-        name: "Instituto Roche",
-        img: partnerImg,
-        description: "The Roche Institute was founded in the year of 1973 and its main objective relies on the spreading of the French language and culture in Porto Alegre. Founded by Monsieur and Madame Roche, the Institute has its own teaching method, which was envisioned and developed especially for Brazilians and its culture and language.Throughout its 45 years, Roche consolidated itself as a reference in quality and success, providing knowledge and proficiency to all those who wish to learn French."
-    },
+  {
+    name: "Chouette",
+    img: chouette,
+    url: "https://www.chouette.net.br/",
+  },
+  {
+    name: "Fraport",
+    img: fraport,
+    url: "https://portoalegre-airport.com.br/pt/institucional/a-fraport",
+  },
+  {
+    name: "Instituto Cervantes",
+    img: cervantes,
+    url: "https://portoalegre-airport.com.br/pt/institucional/a-fraport",
+  },
+  {
+    name: "Novas Veredas",
+    img: novasVeredas,
+    url: "https://www.novasveredas.com.br/",
+  },
 ];
 
 function PartnersCarousel() {
   return (
-<div className="scroll-smooth pb-5 px-10 mt-4 flex w-full gap-10 snap-x overflow-x-auto ">
-    {partners.map(({ name, img, description }) => (
-    <div className="min-w-[200px]">
-      <img
-        src={img}
-        className="h-48 w-full snap-center rounded-xl shadow-md shadow-black/20"
-      />
-      <h5 className="mt-4 text-lg">{name}</h5>
-      <h6 className="font-light text-sm">{description}</h6>
+    <div className="scroll-smooth pb-5 px-10 mt-4 flex w-full gap-10 snap-x overflow-x-auto ">
+      {partners.map(({ name, img, url }) => (
+        <div className="min-w-[200px]">
+          <img
+            src={img}
+            className="h-48 w-48 snap-center rounded-xl shadow-lg shadow-black/10"
+          />
+          <a
+            href={url}
+            target="_blank"
+            className="mt-4 text-lg font-bold hover:underline underline-offset-2"
+          >
+            {name}
+          </a>
+        </div>
+      ))}
     </div>
-    ))}
-</div>
-
-  )
+  );
 }
 
-export default PartnersCarousel
+export default PartnersCarousel;
