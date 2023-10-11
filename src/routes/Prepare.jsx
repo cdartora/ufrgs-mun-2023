@@ -6,6 +6,58 @@ import anniversaryLogo from "../assets/20-anos-white.svg";
 import divider from "../assets/divider-white-inverted.svg";
 import earth from "../assets/right-green-earth.svg";
 
+import CDHNU from "/committees/CDHNU.webp";
+import CELAC from "/committees/CELAC.webp";
+import CIJ from "/committees/CIJ.webp";
+import DPSUA from "/committees/DPS-UA.webp";
+import CESLA from "/committees/CES-LA.webp";
+import PRESS from "/committees/PRESS.webp";
+import UNSC from "/committees/UNSC.webp";
+import SPECPOL from "/committees/SPECPOL.webp";
+
+const studyBooks = [
+  {
+    name: "Conselho de Direitos Humanos das Nações Unidas",
+    img: CDHNU,
+    url: "",
+  },
+  {
+    name: "Comunidade de Estados Latino-Americanos e Caribenhos",
+    img: CELAC,
+    url: "",
+  },
+  {
+    name: "Corte Internacional",
+    img: CIJ,
+    url: "",
+  },
+  {
+    name: "Defesa, Proteção e Segurança da União Africana",
+    img: DPSUA,
+    url: "",
+  },
+  {
+    name: "Conselho Econômico e Social",
+    img: CESLA,
+    url: "",
+  },
+  {
+    name: "Imprensa Internacional",
+    img: PRESS,
+    url: "",
+  },
+  {
+    name: "The Special Political and Decolonization Committee",
+    img: SPECPOL,
+    url: "",
+  },
+  {
+    name: "The United Nations Security Council",
+    img: UNSC,
+    url: "",
+  },
+];
+
 function Prepare() {
   return (
     <PageContainer>
@@ -63,19 +115,20 @@ function Prepare() {
           <div className="py-2 px-10 bg-darkGreen font-black rounded-full text-center">
             Guia de estudos dos comitês
           </div>
-          <div className="w-full grid grid-cols-3 md:grid-cols-4 gap-4 mx-auto mt-10">
-            {Array(7)
-              .fill(null)
-              .map((_, index) => (
-                <a
-                  key={index}
-                  href="https://www.google.com"
-                  target="_blank"
-                  className="hover:opacity-75"
-                >
-                  <div className="h-[30vw] md:h-48 w-full bg-darkGray rounded-lg"></div>
-                </a>
-              ))}
+          <div className="text-darkTone scroll-smooth pb-5 px-10 mt-4 flex w-full gap-10 snap-x overflow-x-auto ">
+            {studyBooks.map(({ name, img, url }) => (
+              <a
+                target="_blank"
+                href={url}
+                className="min-w-[200px] mt-4 text-lg font-bold hover:underline underline-offset-2"
+              >
+                <img
+                  src={img}
+                  className="h-48 w-48 snap-center rounded-xl shadow-lg shadow-black/10"
+                />
+                <a>{name}</a>
+              </a>
+            ))}
           </div>
         </SectionContainer>
       </div>
