@@ -30,19 +30,18 @@ function PartnersCarousel() {
   return (
     <div className="scroll-smooth pb-5 px-10 mt-4 flex w-full gap-10 snap-x overflow-x-auto ">
       {partners.map(({ name, img, url }) => (
-        <div className="min-w-[200px]">
+        <a
+          href={url}
+          target="_blank"
+          className="min-w-[200px] mt-4 text-lg font-bold hover:underline underline-offset-2"
+        >
           <img
             src={img}
             className="h-48 w-48 snap-center rounded-xl shadow-lg shadow-black/10"
           />
-          <a
-            href={url}
-            target="_blank"
-            className="mt-4 text-lg font-bold hover:underline underline-offset-2"
-          >
-            {name}
-          </a>
-        </div>
+
+          {name}
+        </a>
       ))}
     </div>
   );
