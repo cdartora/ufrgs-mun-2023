@@ -56,7 +56,7 @@ export default function Apply() {
       <div className="text-darkTone">
         <SectionContainer className="lg:pt-0">
           <div className="mt-10">
-            <div className="flex justify-center items-center gap-2">
+            <div className="flex justify-center items-center gap-2 text-center">
               <img src={form} alt="" className="w-5" />
               <h3 className="font-black text-2xl">Formulários</h3>
               <div className="h-[1.5px] bg-darkGreen w-full" />
@@ -69,7 +69,7 @@ export default function Apply() {
                   os comprovantes de pagamento.
                 </Paragraph>
               </div>
-              <div className="flex gap-4 mt-4 font-normal text-sm flex-col md:flex-row">
+              <div className="flex gap-4 mt-4 font-normal text-sm flex-col md:flex-row text-center">
                 <a
                   className="rounded-full border-2 border-darkGreen bg-almostWhite text-darkGreen py-2 px-6 inline whitespace-nowrap"
                   href="https://docs.google.com/forms/d/e/1FAIpQLScKXzdZv-29nj7k18k_XM8NwqU6ld6B5u63apwyy6jjCOyHCQ/viewform"

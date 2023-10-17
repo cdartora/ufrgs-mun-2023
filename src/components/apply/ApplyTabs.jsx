@@ -70,11 +70,11 @@ function ApplyTabs() {
             ))}
           </div>
         </Tab.List>
-        <Tab.Panels className="mt-7 mx-auto text-left max-w-xl">
+        <Tab.Panels className="mt-7 mx-auto text-left max-w-lg">
           {steps.map((s) => (
             <Tab.Panel
               key={s.name}
-              className="rounded-xl bg-almostWhite p-4 md:p-10 w-96"
+              className="rounded-xl bg-almostWhite p-4 md:p-10 min-w-fit"
             >
               <h4 className="font-black text-lg mb-4 relative text-darkTone">
                 {s.title}

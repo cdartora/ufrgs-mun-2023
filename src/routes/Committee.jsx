@@ -113,11 +113,11 @@ function Committee() {
                 direitos humanos.
               </Paragraph>
               <Paragraph className="mt-2">
-                <strong>TÓPICO A:</strong> Centros de Detenção Arbitrária em
+                <span className="font-black">TÓPICO A:</span> Centros de Detenção Arbitrária em
                 Massa: violações de Direitos Humanos e efeitos na comunidade
                 internacional
                 <br />
-                <strong>TÓPICO B:</strong> O Aumento da Insegurança Alimentar no
+                <span className="font-black">TÓPICO B:</span> O Aumento da Insegurança Alimentar no
                 Terceiro Mundo
               </Paragraph>
             </div>
@@ -178,10 +178,10 @@ function Committee() {
                 por tal instância.
               </Paragraph>
               <Paragraph className="mt-2">
-                <strong>TÓPICO A:</strong> Ameaças ao Estado Democrático de
+                <span className="font-black">TÓPICO A:</span> Ameaças ao Estado Democrático de
                 Direito na América Latina
                 <br />
-                <strong>TÓPICO B:</strong> Desafios à Transição Energética na
+                <span className="font-black">TÓPICO B:</span> Desafios à Transição Energética na
                 América Latina
               </Paragraph>
             </div>
@@ -259,10 +259,10 @@ function Committee() {
                 debates.
               </Paragraph>
               <Paragraph className="mt-2">
-                <strong>TÓPICO A:</strong> Aplicação da Convenção Internacional
+                <span className="font-black">TÓPICO A:</span> Aplicação da Convenção Internacional
                 sobre a Eliminação de todas as formas de Discriminação Racial
                 <br />
-                <strong>TÓPICO B:</strong> Consequências Legais das Políticas
+                <span className="font-black">TÓPICO B:</span> Consequências Legais das Políticas
                 Práticas de Israel no Território Palestino Ocupado Incluindo
                 Jerusalém Oriental
               </Paragraph>
@@ -318,10 +318,10 @@ function Committee() {
                 idioma africano.
               </Paragraph>
               <Paragraph className="mt-2">
-                <strong>TÓPICO A:</strong> Desafios à Soberania Estatal na
+                <span className="font-black">TÓPICO A:</span> Desafios à Soberania Estatal na
                 África Oriental
                 <br />
-                <strong>TÓPICO B:</strong> Revoluções Coloridas e Guerras
+                <span className="font-black">TÓPICO B:</span> Revoluções Coloridas e Guerras
                 Híbridas na África
               </Paragraph>
             </div>
@@ -372,10 +372,10 @@ function Committee() {
                 implementar essas políticas e programas.
               </Paragraph>
               <Paragraph className="mt-2">
-                <strong>TÓPICO A:</strong> Impacto das Mudanças Climáticas na
+                <span className="font-black">TÓPICO A:</span> Impacto das Mudanças Climáticas na
                 Economia dos Estados Árabes
                 <br />
-                <strong>TÓPICO B:</strong> Geopolítica Hídrica no Oriente Médio
+                <span className="font-black">TÓPICO B:</span> Geopolítica Hídrica no Oriente Médio
               </Paragraph>
             </div>
           </div>
@@ -423,7 +423,7 @@ function Committee() {
                 telejornais e coletivas de imprensa.
               </Paragraph>
               <Paragraph className="mt-2">
-                <strong>TÓPICO:</strong> Diretrizes para a Cobertura
+                <span className="font-black">TÓPICO:</span> Diretrizes para a Cobertura
                 Jornalística de Modelos das Nações Unidas
               </Paragraph>
             </div>
@@ -470,10 +470,10 @@ function Committee() {
                 peaceful uses of outer space (United Nations, 2022).
               </Paragraph>
               <Paragraph className="mt-2">
-                <strong>TOPIC A:</strong> The Situation in Western Sahara
+                <span className="font-black">TOPIC A:</span> The Situation in Western Sahara
                 Nowadays, People’s Self-Determination and MINURSO effectiveness
                 <br />
-                <strong>TOPIC B:</strong> Colonial Impacts of Climate Change in
+                <span className="font-black">TOPIC B:</span> Colonial Impacts of Climate Change in
                 the Third World
               </Paragraph>
             </div>
@@ -526,10 +526,10 @@ function Committee() {
                 which allows them to block any resolution with just one vote.
               </Paragraph>
               <Paragraph className="mt-2">
-                <strong>TOPIC A:</strong> Implications of Developing Submarine
+                <span className="font-black">TOPIC A:</span> Implications of Developing Submarine
                 Fleets in the Asia-Pacific Region: the situation of Taiwan
                 <br />
-                <strong>TOPIC B:</strong> The Turkish Invasion, Occupation or
+                <span className="font-black">TOPIC B:</span> The Turkish Invasion, Occupation or
                 Bombardment of Northern Syria: the attempt to stop the creation
                 of the Kurdish State
               </Paragraph>

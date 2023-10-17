@@ -1,6 +1,6 @@
 import PageContainer from "../components/PageContainer";
 import SectionContainer from "../components/SectionContainer";
-import { Title, Subtitle, Paragraph } from "../components/Formatting";
+import { Title, Subtitle } from "../components/Formatting";
 
 import anniversaryLogo from "../assets/20-anos-white.svg";
 import earth from "../assets/right-green-earth.svg";
@@ -20,9 +20,14 @@ function Prepare() {
           </div>
           <Subtitle className="mb-4">Prepare-se para o UFRGSMUN</Subtitle>
           <div className="flex justify-center gap-4 text-sm md:flex-row flex-col w-full mb-10">
-            <button className="rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap">
+            <a
+              href="/documents/guia-de-estudos.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center rounded-full border-2 border-almostWhite bg-transparent text-almostWhite py-2 px-6 inline whitespace-nowrap"
+            >
               Guia de estudos
-            </button>
+            </a>
             <a
               href="/documents/guia-de-regras.pdf"
               target="_blank"
